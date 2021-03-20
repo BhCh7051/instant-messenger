@@ -1,17 +1,17 @@
 {
-  "name": "IM",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "morgan": "^1.10.0"
-  }
+  },
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "main": "App.js",
+  "name": "IM",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
+  },
+  "version": "1.0.0"
 }
