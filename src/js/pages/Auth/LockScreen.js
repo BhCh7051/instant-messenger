@@ -17,18 +17,12 @@ import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
-//i18n
-import { useTranslation } from "react-i18next";
-
 //Import Images
 import logodark from "../../assets/images/logo-dark.png";
 import logolight from "../../assets/images/logo-light.png";
 import avatar1 from "../../assets/images/users/avatar-1.jpg";
 
 function LockScreen(props) {
-  /* intilize t variable for multi language implementation */
-  const { t } = useTranslation();
-
   // validation
   const formik = useFormik({
     initialValues: {
@@ -63,10 +57,10 @@ function LockScreen(props) {
                     className="logo logo-light"
                   />
                 </Link>
-                <h4> {t("Lock screen")} </h4>{" "}
+                <h4> {"Lock screen"} </h4>{" "}
                 <p className="text-muted mb-4">
                   {" "}
-                  {t("Enter your password to unlock the screen!")}{" "}
+                  {"Enter your password to unlock the screen!"}{" "}
                 </p>
               </div>
               <Card>
@@ -80,12 +74,12 @@ function LockScreen(props) {
                       />
                       <h5 className="font-size-15 mt-3">
                         {" "}
-                        {t("Patricia Smith")}{" "}
+                        {"Patricia Smith"}{" "}
                       </h5>{" "}
                     </div>{" "}
                     <Form onSubmit={formik.handleSubmit}>
                       <FormGroup className="mb-4">
-                        <Label className="form-label"> {t("Password")} </Label>{" "}
+                        <Label className="form-label"> {"Password"} </Label>{" "}
                         <InputGroup className="mb-3 bg-soft-light input-group-lg rounded-lg">
                           <span className="input-group-text border-light text-muted">
                             <i className="ri-lock-2-line"> </i>{" "}
@@ -132,17 +126,17 @@ function LockScreen(props) {
               <div className="mt-5 text-center">
                 <p>
                   {" "}
-                  {t("Not you")} ? {t("return")}{" "}
+                  {"Not you"} ? {"return"}{" "}
                   <Link to="login" className="font-weight-medium text-primary">
                     {" "}
-                    {t("Signin")}{" "}
+                    {"Signin"}{" "}
                   </Link>{" "}
                 </p>
                 <p>
                   {" "}
-                  ©{t("2021 Chatvia")}. {t("Crafted with")}{" "}
+                  ©{"2021 Chatvia"}. {"Crafted with"}{" "}
                   <i className="mdi mdi-heart text-danger"> </i>{" "}
-                  {t("by Themesbrand")}
+                  {"by Themesbrand"}
                 </p>
               </div>{" "}
             </Col>{" "}

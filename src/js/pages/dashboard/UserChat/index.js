@@ -32,16 +32,10 @@ import { setFullUser } from "../../../redux/chat/actions";
 import avatar4 from "../../../assets/images/users/avatar-4.jpg";
 import avatar1 from "../../../assets/images/users/avatar-1.jpg";
 
-//i18n
-import { useTranslation } from "react-i18next";
-
 function UserChat(props) {
   const ref = useRef();
 
   const [modal, setModal] = useState(false);
-
-  /* intilize t variable for multi language implementation */
-  const { t } = useTranslation();
 
   //demo conversation messages
   //userType must be required
@@ -247,14 +241,14 @@ function UserChat(props) {
                                 <DropdownMenu>
                                   <DropdownItem>
                                     {" "}
-                                    {t("Copy")}{" "}
+                                    {"Copy"}{" "}
                                     <i className="ri-file-copy-line float-end text-muted">
                                       {" "}
                                     </i>
                                   </DropdownItem>
                                   <DropdownItem>
                                     {" "}
-                                    {t("Save")}{" "}
+                                    {"Save"}{" "}
                                     <i className="ri-save-line float-end text-muted">
                                       {" "}
                                     </i>
@@ -410,14 +404,14 @@ function UserChat(props) {
                                 <DropdownMenu>
                                   <DropdownItem>
                                     {" "}
-                                    {t("Copy")}{" "}
+                                    {"Copy"}{" "}
                                     <i className="ri-file-copy-line float-end text-muted">
                                       {" "}
                                     </i>
                                   </DropdownItem>
                                   <DropdownItem>
                                     {" "}
-                                    {t("Save")}{" "}
+                                    {"Save"}{" "}
                                     <i className="ri-save-line float-end text-muted">
                                       {" "}
                                     </i>

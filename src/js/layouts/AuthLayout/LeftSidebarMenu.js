@@ -24,7 +24,8 @@ function LeftSidebarMenu(props) {
   const [dropdownOpen2, setDropdownOpen2] = useState(false);
   const [dropdownOpenMobile, setDropdownOpenMobile] = useState(false);
 
-
+  const toggle = () => setDropdownOpen(!dropdownOpen);
+  const toggle2 = () => setDropdownOpen2(!dropdownOpen2);
   const toggleMobile = () => setDropdownOpenMobile(!dropdownOpenMobile);
 
   const toggleTab = (tab) => {
@@ -183,6 +184,67 @@ function LeftSidebarMenu(props) {
           </Nav>{" "}
         </div>{" "}
         {/* end side-menu nav */}
+        <div className="flex-lg-column d-none d-lg-block">
+          <Nav className="side-menu-nav justify-content-center">
+            <Dropdown
+              nav
+              direction="up"
+              isOpen={dropdownOpen2}
+              className="btn-group dropup profile-user-dropdown"
+              toggle={toggle2}
+            >
+              <DropdownToggle nav>
+                <i className="ri-global-line"></i>
+              </DropdownToggle>
+            </Dropdown>
+            <NavItem>
+              <NavLink id="light-dark" href="">
+                <i className="ri-sun-line theme-mode-icon"></i>
+              </NavLink>
+              <UncontrolledTooltip target="light-dark" placement="right">
+                Dark / Light Mode
+              </UncontrolledTooltip>
+            </NavItem>
+            <Dropdown
+              nav
+              isOpen={dropdownOpen}
+              className="btn-group dropup nav-item profile-user-dropdown d-inline-block"
+              toggle={toggle}
+            >
+              <DropdownToggle nav>
+                <img
+                  src={avatar1}
+                  alt=""
+                  className="profile-user rounded-circle"
+                />
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem
+                  onClick={() => {
+                    toggleTab("profile");
+                  }}
+                >
+                  Profile{" "}
+                  <i className="ri-profile-line float-end text-muted"></i>
+                </DropdownItem>
+                <DropdownItem
+                  onClick={() => {
+                    toggleTab("settings");
+                  }}
+                >
+                  Setting{" "}
+                  <i className="ri-settings-3-line float-end text-muted"></i>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem href="/logout">
+                  Log out{" "}
+                  <i className="ri-logout-circle-r-line float-end text-muted"></i>
+                </DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+          </Nav>
+        </div>
+        {/* Side menu user */}
       </div>{" "}
     </React.Fragment>
   );

@@ -1,4 +1,3 @@
-import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./js/App";
@@ -6,6 +5,10 @@ import * as serviceWorker from "./js/serviceWorker";
 
 import { Provider } from "react-redux";
 import { configureStore } from "./js/redux/store";
+
+//Import Css
+import "./themeLight.css";
+import "./index.css";
 
 ReactDOM.render(
   <Provider store={configureStore()}>

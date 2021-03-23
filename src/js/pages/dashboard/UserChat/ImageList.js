@@ -7,9 +7,6 @@ import {
 } from "reactstrap";
 import { Link } from "react-router-dom";
 
-//i18n
-import { useTranslation } from "react-i18next";
-
 //lightbox
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
@@ -18,9 +15,6 @@ function ImageList(props) {
   const [isOpen, setisOpen] = useState(false);
   const [currentImage, setcurrentImage] = useState(null);
   const [images] = useState(props.images);
-
-  /* intilize t variable for multi language implementation */
-  const { t } = useTranslation();
 
   const toggleLightbox = (currentImage) => {
     setisOpen(!isOpen);
@@ -58,26 +52,26 @@ function ImageList(props) {
                   <DropdownMenu>
                     <DropdownItem>
                       {" "}
-                      {t("Copy")}{" "}
+                      {"Copy"}{" "}
                       <i className="ri-file-copy-line float-end text-muted">
                         {" "}
                       </i>
                     </DropdownItem>
                     <DropdownItem>
                       {" "}
-                      {t("Save")}{" "}
+                      {"Save"}{" "}
                       <i className="ri-save-line float-end text-muted"> </i>
                     </DropdownItem>
                     <DropdownItem>
                       {" "}
-                      {t("Forward")}{" "}
+                      {"Forward"}{" "}
                       <i className="ri-chat-forward-line float-end text-muted">
                         {" "}
                       </i>
                     </DropdownItem>
                     <DropdownItem>
                       {" "}
-                      {t("Delete")}{" "}
+                      {"Delete"}{" "}
                       <i className="ri-delete-bin-line float-end text-muted">
                         {" "}
                       </i>

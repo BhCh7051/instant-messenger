@@ -2,14 +2,8 @@ import React from "react";
 import { Collapse, CardBody, CardHeader } from "reactstrap";
 import { Link } from "react-router-dom";
 
-//i18n
-import { useTranslation } from "react-i18next";
-
 function CustomCollapse(props) {
   const { isOpen, toggleCollapse } = props;
-
-  /* intilize t variable for multi language implementation */
-  const { t } = useTranslation();
 
   return (
     <React.Fragment>
@@ -26,7 +20,7 @@ function CustomCollapse(props) {
                 {" "}
               </i>
             )}{" "}
-            {t(props.title)}{" "}
+            {props.title}{" "}
             <i
               className={
                 isOpen

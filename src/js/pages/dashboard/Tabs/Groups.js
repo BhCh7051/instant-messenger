@@ -20,8 +20,6 @@ import {
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { withTranslation } from "react-i18next";
-
 //simple bar
 import SimpleBar from "simplebar-react";
 
@@ -137,7 +135,7 @@ class Groups extends Component {
   }
 
   render() {
-    const { t } = this.props;
+    const {  } = this.props;
     return (
       <React.Fragment>
         <div>
@@ -159,7 +157,7 @@ class Groups extends Component {
                 Create group{" "}
               </UncontrolledTooltip>
             </div>{" "}
-            <h4 className="mb-4"> {t("Groups")} </h4>
+            <h4 className="mb-4"> {("Groups")} </h4>
             {/* Start add group Modal */}{" "}
             <Modal isOpen={this.state.modal} centered toggle={this.toggle}>
               <ModalHeader
@@ -168,14 +166,14 @@ class Groups extends Component {
                 toggle={this.toggle}
               >
                 {" "}
-                {t("Create New Group")}{" "}
+                {("Create New Group")}{" "}
               </ModalHeader>{" "}
               <ModalBody className="p-4">
                 <Form>
                   <div className="mb-4">
                     <Label className="form-label" htmlFor="addgroupname-input">
                       {" "}
-                      {t("Group Name")}{" "}
+                      {("Group Name")}{" "}
                     </Label>{" "}
                     <Input
                       type="text"
@@ -187,7 +185,7 @@ class Groups extends Component {
                     />
                   </div>{" "}
                   <div className="mb-4">
-                    <Label className="form-label"> {t("Group Members")} </Label>{" "}
+                    <Label className="form-label"> {("Group Members")} </Label>{" "}
                     <Alert isOpen={this.state.isOpenAlert} color="danger">
                       {" "}
                       {this.state.message}{" "}
@@ -200,7 +198,7 @@ class Groups extends Component {
                         onClick={this.toggleCollapse}
                       >
                         {" "}
-                        {t("Select Members")}{" "}
+                        {("Select Members")}{" "}
                       </Button>{" "}
                     </div>
                     <Collapse
@@ -211,7 +209,7 @@ class Groups extends Component {
                         <CardHeader>
                           <h5 className="font-size-15 mb-0">
                             {" "}
-                            {t("Contacts")}{" "}
+                            {("Contacts")}{" "}
                           </h5>{" "}
                         </CardHeader>{" "}
                         <CardBody className="p-2">
@@ -254,7 +252,7 @@ class Groups extends Component {
               <ModalFooter>
                 <Button type="button" color="link" onClick={this.toggle}>
                   {" "}
-                  {t("Close")}{" "}
+                  {("Close")}{" "}
                 </Button>{" "}
                 <Button
                   type="button"
@@ -357,4 +355,4 @@ const mapStateToProps = (state) => {
 
 export default connect(mapStateToProps, {
   createGroup,
-})(withTranslation()(Groups));
+})(Groups);
