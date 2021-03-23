@@ -125,7 +125,7 @@ class Contacts extends Component {
                 toggle={this.toggle}
               >
                 {" "}
-                {("Add Contacts")}{" "}
+                {"Add Contacts"}{" "}
               </ModalHeader>{" "}
               <ModalBody className="p-4">
                 <Form>
@@ -135,7 +135,7 @@ class Contacts extends Component {
                       htmlFor="addcontactemail-input"
                     >
                       {" "}
-                      {("Email")}{" "}
+                      {"Email"}{" "}
                     </Label>{" "}
                     <Input
                       type="email"
@@ -150,7 +150,7 @@ class Contacts extends Component {
                       htmlFor="addcontact-invitemessage-input"
                     >
                       {" "}
-                      {("Invatation Message")}{" "}
+                      {"Invatation Message"}{" "}
                     </Label>{" "}
                     <textarea
                       className="form-control"
@@ -187,7 +187,7 @@ class Contacts extends Component {
                 <Input
                   type="text"
                   className="form-control bg-light "
-                  placeholder={("Search users..")}
+                  placeholder={"Search users.."}
                 />{" "}
               </InputGroup>{" "}
             </div>{" "}
@@ -223,21 +223,21 @@ class Contacts extends Component {
                           <DropdownMenu className="dropdown-menu-end">
                             <DropdownItem>
                               {" "}
-                              {("Share")}{" "}
+                              {"Share"}{" "}
                               <i className="ri-share-line float-end text-muted">
                                 {" "}
                               </i>
                             </DropdownItem>
                             <DropdownItem>
                               {" "}
-                              {("Block")}{" "}
+                              {"Block"}{" "}
                               <i className="ri-forbid-line float-end text-muted">
                                 {" "}
                               </i>
                             </DropdownItem>
                             <DropdownItem>
                               {" "}
-                              {("Remove")}{" "}
+                              {"Remove"}{" "}
                               <i className="ri-delete-bin-line float-end text-muted">
                                 {" "}
                               </i>

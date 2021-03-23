@@ -135,7 +135,7 @@ class Groups extends Component {
   }
 
   render() {
-    const {  } = this.props;
+    const {} = this.props;
     return (
       <React.Fragment>
         <div>
@@ -157,7 +157,7 @@ class Groups extends Component {
                 Create group{" "}
               </UncontrolledTooltip>
             </div>{" "}
-            <h4 className="mb-4"> {("Groups")} </h4>
+            <h4 className="mb-4"> {"Groups"} </h4>
             {/* Start add group Modal */}{" "}
             <Modal isOpen={this.state.modal} centered toggle={this.toggle}>
               <ModalHeader
@@ -166,14 +166,14 @@ class Groups extends Component {
                 toggle={this.toggle}
               >
                 {" "}
-                {("Create New Group")}{" "}
+                {"Create New Group"}{" "}
               </ModalHeader>{" "}
               <ModalBody className="p-4">
                 <Form>
                   <div className="mb-4">
                     <Label className="form-label" htmlFor="addgroupname-input">
                       {" "}
-                      {("Group Name")}{" "}
+                      {"Group Name"}{" "}
                     </Label>{" "}
                     <Input
                       type="text"
@@ -185,7 +185,7 @@ class Groups extends Component {
                     />
                   </div>{" "}
                   <div className="mb-4">
-                    <Label className="form-label"> {("Group Members")} </Label>{" "}
+                    <Label className="form-label"> {"Group Members"} </Label>{" "}
                     <Alert isOpen={this.state.isOpenAlert} color="danger">
                       {" "}
                       {this.state.message}{" "}
@@ -198,7 +198,7 @@ class Groups extends Component {
                         onClick={this.toggleCollapse}
                       >
                         {" "}
-                        {("Select Members")}{" "}
+                        {"Select Members"}{" "}
                       </Button>{" "}
                     </div>
                     <Collapse
@@ -207,10 +207,7 @@ class Groups extends Component {
                     >
                       <Card className="border">
                         <CardHeader>
-                          <h5 className="font-size-15 mb-0">
-                            {" "}
-                            {("Contacts")}{" "}
-                          </h5>{" "}
+                          <h5 className="font-size-15 mb-0"> {"Contacts"} </h5>{" "}
                         </CardHeader>{" "}
                         <CardBody className="p-2">
                           <SimpleBar
@@ -252,7 +249,7 @@ class Groups extends Component {
               <ModalFooter>
                 <Button type="button" color="link" onClick={this.toggle}>
                   {" "}
-                  {("Close")}{" "}
+                  {"Close"}{" "}
                 </Button>{" "}
                 <Button
                   type="button"
