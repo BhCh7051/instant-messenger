@@ -3,9 +3,11 @@ import {
   OPEN_USER_PROFILE_SIDEBAR,
   CLOSE_USER_PROFILE_SIDEBAR,
   SET_CONVERSATION_NAME_IN_OPEN_CHAT,
+  TOGGLE_DARKTHEME,
 } from "./constants";
 
 const INIT_STATE = {
+  darkThemeEnabled: false,
   activeTab: "chat",
   userSidebar: false,
   conversationName: "Doris Brown",
@@ -17,6 +19,12 @@ const Layout = (state = INIT_STATE, action) => {
       return {
         ...state,
         activeTab: action.payload,
+      };
+
+    case TOGGLE_DARKTHEME:
+      return {
+        ...state,
+        darkThemeEnabled: !state.darkThemeEnabled,
       };
 
     case OPEN_USER_PROFILE_SIDEBAR:
