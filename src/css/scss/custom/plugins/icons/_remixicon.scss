@@ -13,10 +13,13 @@
   src: url("../../../../../../node_modules/remixicon/fonts/remixicon.eot"); /* IE9*/
   src: url("../../../../../../node_modules/remixicon/fonts/remixicon.eot")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("../../../../../../node_modules/remixicon/fonts/remixicon.woff2")
+    /* IE6-IE8 */
+      url("../../../../../../node_modules/remixicon/fonts/remixicon.woff2")
       format("woff2"),
-    url("../../../../../../node_modules/remixicon/fonts/remixicon.woff") format("woff"),
-    url("../../../../../../node_modules/remixicon/fonts/remixicon.ttf") format("truetype"),
+    url("../../../../../../node_modules/remixicon/fonts/remixicon.woff")
+      format("woff"),
+    url("../../../../../../node_modules/remixicon/fonts/remixicon.ttf")
+      format("truetype"),
     /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
       url("../../../../../../node_modules/remixicon/fonts/remixicon.svg?t=1580819880586#remixicon")
       format("svg"); /* iOS 4.1- */

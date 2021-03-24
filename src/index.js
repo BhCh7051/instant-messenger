@@ -6,13 +6,31 @@ import * as serviceWorker from "./js/serviceWorker";
 import { Provider } from "react-redux";
 import { configureStore } from "./js/redux/store";
 
-//Import Css
-import "./themeLight.css";
-import "./index.css";
+//@@
+//create components using React.lazy
+const LightTheme = React.lazy(() => import("./js/themes/lightTheme"));
+const DarkTheme = React.lazy(() => import("./js/themes/darkTheme"));
+
+//@@
+//create a parent component that will load the components conditionally using React.Suspense
+const ThemeSelector = ({ children }) => {
+  let isDark = localStorage.getItem("dark");
+  return (
+    <>
+      <React.Suspense fallback={<></>}>
+        {!isDark && <LightTheme />}
+        {isDark && <DarkTheme />}
+      </React.Suspense>
+      {children}
+    </>
+  );
+};
 
 ReactDOM.render(
   <Provider store={configureStore()}>
-    <App />
+    <ThemeSelector>
+      <App />
+    </ThemeSelector>
   </Provider>,
   document.getElementById("root")
 );

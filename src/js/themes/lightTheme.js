@@ -1,5 +1,5 @@
 import React from "react";
-import "./themeLight.css";
+import "../../css/scss/themelight.scss";
 
 const Theme = () => <React.Fragment></React.Fragment>;
 

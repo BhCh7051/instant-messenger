@@ -20,19 +20,23 @@ import logo from "../../assets/images/logo.svg";
 import avatar1 from "../../assets/images/users/avatar-1.jpg";
 
 function LeftSidebarMenu(props) {
+  let isDark = false;
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownOpen2, setDropdownOpen2] = useState(false);
   const [dropdownOpenMobile, setDropdownOpenMobile] = useState(false);
-
   const toggle = () => setDropdownOpen(!dropdownOpen);
   const toggle2 = () => setDropdownOpen2(!dropdownOpen2);
   const toggleMobile = () => setDropdownOpenMobile(!dropdownOpenMobile);
-
   const toggleTab = (tab) => {
     props.setActiveTab(tab);
   };
-
   const activeTab = props.activeTab;
+
+  const darkSwitcherToggle = (e) => {
+    e.preventDefault();
+    isDark = !isDark;
+    localStorage.setItem("dark", isDark);
+  };
 
   return (
     <React.Fragment>
@@ -198,10 +202,15 @@ function LeftSidebarMenu(props) {
               </DropdownToggle>
             </Dropdown>
             <NavItem>
-              <NavLink id="light-dark" href="">
+              <NavLink
+                id="Light2Dark"
+                a
+                href="/dashboard"
+                onClick={(e) => darkSwitcherToggle(e)}
+              >
                 <i className="ri-sun-line theme-mode-icon"></i>
               </NavLink>
-              <UncontrolledTooltip target="light-dark" placement="right">
+              <UncontrolledTooltip target="Light2Dark" placement="right">
                 Dark / Light Mode
               </UncontrolledTooltip>
             </NavItem>
