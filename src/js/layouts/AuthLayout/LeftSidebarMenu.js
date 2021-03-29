@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import { AppContext } from "../../context/AppContext";
 import {
   Nav,
   NavItem,
@@ -20,23 +21,23 @@ import logo from "../../assets/images/logo.svg";
 import avatar1 from "../../assets/images/users/avatar-1.jpg";
 
 function LeftSidebarMenu(props) {
-  let isDark = false;
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [dropdownOpen2, setDropdownOpen2] = useState(false);
   const [dropdownOpenMobile, setDropdownOpenMobile] = useState(false);
   const toggle = () => setDropdownOpen(!dropdownOpen);
-  const toggle2 = () => setDropdownOpen2(!dropdownOpen2);
   const toggleMobile = () => setDropdownOpenMobile(!dropdownOpenMobile);
   const toggleTab = (tab) => {
     props.setActiveTab(tab);
   };
-  const activeTab = props.activeTab;
-
-  const darkSwitcherToggle = (e) => {
+  const context = useContext(AppContext);
+  const isLight = context.theme === "light";
+  const handleThemeSwitch = (e) => {
     e.preventDefault();
-    isDark = !isDark;
-    localStorage.setItem("dark", isDark);
+
+    document.documentElement.classList.remove(`${context.theme}`);
+
+    context.changeTheme(isLight ? "dark" : "light");
   };
+  const activeTab = props.activeTab;
 
   return (
     <React.Fragment>
@@ -190,23 +191,15 @@ function LeftSidebarMenu(props) {
         {/* end side-menu nav */}
         <div className="flex-lg-column d-none d-lg-block">
           <Nav className="side-menu-nav justify-content-center">
-            <Dropdown
-              nav
-              direction="up"
-              isOpen={dropdownOpen2}
-              className="btn-group dropup profile-user-dropdown"
-              toggle={toggle2}
-            >
-              <DropdownToggle nav>
-                <i className="ri-global-line"></i>
-              </DropdownToggle>
-            </Dropdown>
             <NavItem>
               <NavLink
                 id="Light2Dark"
                 a
-                href="/dashboard"
-                onClick={(e) => darkSwitcherToggle(e)}
+                href="/"
+                onClick={handleThemeSwitch}
+                checked={isLight}
+                onLabel={"light theme"}
+                offLabel={"dark theme"}
               >
                 <i className="ri-sun-line theme-mode-icon"></i>
               </NavLink>

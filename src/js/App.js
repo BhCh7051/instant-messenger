@@ -1,8 +1,9 @@
-import React from "react";
-import Routes from "./routes/";
+import React, { useContext } from "react";
+import { AppContext } from "./context/AppContext";
 
 //fakebackend
 import fakeBackend from "./helpers/fake-backend";
+import Routes from "./routes";
 
 // //Firebase helper
 // import { initFirebaseBackend } from "./helpers/firebase";
@@ -24,8 +25,16 @@ fakeBackend();
 // // init firebase backend
 // initFirebaseBackend(firebaseConfig);
 
-function App() {
-  return <Routes />;
-}
+import("../css/scss/theme.scss");
+
+const App = () => {
+  const context = useContext(AppContext);
+  document.documentElement.classList.add(`${context.theme}`);
+  return (
+    <React.Fragment>
+      <Routes />
+    </React.Fragment>
+  );
+};
 
 export default App;

@@ -1,6 +1,5 @@
 import React, { Suspense } from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-
 //import routes
 import { authProtectedRoutes, publicRoutes } from "./routes";
 
@@ -46,6 +45,7 @@ const AppRoute = ({
 /**
  * Main Route component
  */
+
 const Routes = (props) => {
   return (
     // rendering the router with layout

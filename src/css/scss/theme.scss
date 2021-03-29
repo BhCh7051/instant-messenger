@@ -1,0 +1,373 @@
+.theme.light {
+  /*  @import ' ../../../node_modules/@mdi/font/css/materialdesignicons.min.css';*/
+  @import "../../../node_modules/bootstrap/scss/functions";
+  //light mode
+  @import "./custom/variables";
+
+  /*!
+   * Bootstrap v5.0.0-beta2 (https://getbootstrap.com/)
+   * Copyright 2011-2021 The Bootstrap Authors
+   * Copyright 2011-2021 Twitter, Inc.
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   */
+
+  // scss-docs-start import-stack
+  // Configuration
+
+  @import "../../../node_modules/bootstrap/scss/variables";
+  @import "../../../node_modules/bootstrap/scss/mixins";
+  @import "../../../node_modules/bootstrap/scss/utilities";
+
+  // Layout & components
+  @import "../../../node_modules/bootstrap/scss/root";
+  @import "../../../node_modules/bootstrap/scss/reboot";
+  @import "../../../node_modules/bootstrap/scss/type";
+  @import "../../../node_modules/bootstrap/scss/images";
+  @import "../../../node_modules/bootstrap/scss/containers";
+  @import "../../../node_modules/bootstrap/scss/grid";
+  @import "../../../node_modules/bootstrap/scss/tables";
+  @import "../../../node_modules/bootstrap/scss/forms";
+  @import "../../../node_modules/bootstrap/scss/buttons";
+  @import "../../../node_modules/bootstrap/scss/transitions";
+  @import "../../../node_modules/bootstrap/scss/dropdown";
+  @import "../../../node_modules/bootstrap/scss/button-group";
+  @import "../../../node_modules/bootstrap/scss/nav";
+  @import "../../../node_modules/bootstrap/scss/navbar";
+  @import "../../../node_modules/bootstrap/scss/card";
+  @import "../../../node_modules/bootstrap/scss/accordion";
+  @import "../../../node_modules/bootstrap/scss/breadcrumb";
+  @import "../../../node_modules/bootstrap/scss/pagination";
+  @import "../../../node_modules/bootstrap/scss/badge";
+  @import "../../../node_modules/bootstrap/scss/alert";
+  @import "../../../node_modules/bootstrap/scss/progress";
+  @import "../../../node_modules/bootstrap/scss/list-group";
+  @import "../../../node_modules/bootstrap/scss/close";
+  @import "../../../node_modules/bootstrap/scss/toasts";
+  @import "../../../node_modules/bootstrap/scss/modal";
+  @import "../../../node_modules/bootstrap/scss/tooltip";
+  @import "../../../node_modules/bootstrap/scss/popover";
+  @import "../../../node_modules/bootstrap/scss/carousel";
+  @import "../../../node_modules/bootstrap/scss/spinners";
+
+  // Helpers
+  @import "../../../node_modules/bootstrap/scss/helpers";
+
+  // Utilities
+  @import "../../../node_modules/bootstrap/scss/utilities/api";
+  // scss-docs-end import-stack
+
+  //custom
+  @import "./custom/components/components";
+  @import "./custom/pages/pages";
+  @import "./custom/plugins/icons/materialdesignicons";
+  @import "./custom/plugins/custom-scrollbar";
+  @import "./custom/structure/sidemenu";
+
+  .nav-item {
+    cursor: pointer;
+  }
+
+  .dropdown {
+    cursor: pointer;
+  }
+
+  .slick-slide {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .slick-arrow {
+    display: none;
+  }
+
+  .emoji-mart {
+    border: none !important;
+  }
+
+  .emoji-mart-preview {
+    display: none !important;
+  }
+
+  .emoji-mart-bar {
+    border: none !important;
+  }
+
+  .alice-carousel__stage-item {
+    margin-left: 8px;
+    margin-right: 8px !important;
+    width: 71px !important;
+  }
+
+  .input-file {
+    label {
+      margin-bottom: 0;
+    }
+    input[type="file"] {
+      display: none;
+    }
+  }
+
+  .emoji-mart-light {
+    background-color: $card-bg !important;
+  }
+
+  .emoji-mart-search {
+    input {
+      background-color: $card-bg !important;
+      border-color: $card-border-color !important;
+    }
+  }
+
+  .emoji-mart-category-label {
+    span {
+      background-color: $card-bg !important;
+      color: $gray-700;
+    }
+  }
+
+  .emoji-mart-category {
+    .emoji-mart-emoji {
+      &:hover {
+        background-color: $gray-300 !important;
+      }
+
+      &::before {
+        background-color: $gray-300 !important;
+        border-radius: 100% !important;
+      }
+    }
+  }
+  .w-70 {
+    width: 73% !important;
+  }
+
+  .ctext-wrap-content {
+    animation: flyIn 0.6s ease-in-out;
+  }
+
+  .blank-div {
+    width: 36px;
+    height: 36px;
+  }
+
+  .profile-user-dropdown {
+    .dropdown-item {
+      &.active {
+        color: $white;
+        text-decoration: none;
+        background-color: $primary;
+      }
+    }
+  }
+  .dot_remove {
+    .alice-carousel__dots,
+    .alice-carousel__prev-btn,
+    .alice-carousel__next-btn {
+      display: none !important;
+    }
+  }
+  .close {
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    margin: 10px;
+    // background: transparent escape-svg($btn-close-bg-dark) center / $btn-close-width auto no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    width: 1em;
+    height: 1em;
+    z-index: 2;
+  }
+}
+
+.theme.dark {
+  /*  @import url("https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css");
+  @import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");*/
+  @import "../../../node_modules/bootstrap/scss/functions";
+
+  // dark mode
+  @import "./custom/variables-dark";
+
+  /*!
+ * Bootstrap v5.0.0-beta2 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+  // scss-docs-start import-stack
+  // Configuration
+
+  @import "../../../node_modules/bootstrap/scss/variables";
+  @import "../../../node_modules/bootstrap/scss/mixins";
+  @import "../../../node_modules/bootstrap/scss/utilities";
+
+  // Layout & components
+  @import "../../../node_modules/bootstrap/scss/root";
+  @import "../../../node_modules/bootstrap/scss/reboot";
+  @import "../../../node_modules/bootstrap/scss/type";
+  @import "../../../node_modules/bootstrap/scss/images";
+  @import "../../../node_modules/bootstrap/scss/containers";
+  @import "../../../node_modules/bootstrap/scss/grid";
+  @import "../../../node_modules/bootstrap/scss/tables";
+  @import "../../../node_modules/bootstrap/scss/forms";
+  @import "../../../node_modules/bootstrap/scss/buttons";
+  @import "../../../node_modules/bootstrap/scss/transitions";
+  @import "../../../node_modules/bootstrap/scss/dropdown";
+  @import "../../../node_modules/bootstrap/scss/button-group";
+  @import "../../../node_modules/bootstrap/scss/nav";
+  @import "../../../node_modules/bootstrap/scss/navbar";
+  @import "../../../node_modules/bootstrap/scss/card";
+  @import "../../../node_modules/bootstrap/scss/accordion";
+  @import "../../../node_modules/bootstrap/scss/breadcrumb";
+  @import "../../../node_modules/bootstrap/scss/pagination";
+  @import "../../../node_modules/bootstrap/scss/badge";
+  @import "../../../node_modules/bootstrap/scss/alert";
+  @import "../../../node_modules/bootstrap/scss/progress";
+  @import "../../../node_modules/bootstrap/scss/list-group";
+  @import "../../../node_modules/bootstrap/scss/close";
+  @import "../../../node_modules/bootstrap/scss/toasts";
+  @import "../../../node_modules/bootstrap/scss/modal";
+  @import "../../../node_modules/bootstrap/scss/tooltip";
+  @import "../../../node_modules/bootstrap/scss/popover";
+  @import "../../../node_modules/bootstrap/scss/carousel";
+  @import "../../../node_modules/bootstrap/scss/spinners";
+
+  // Helpers
+  @import "../../../node_modules/bootstrap/scss/helpers";
+
+  // Utilities
+  @import "../../../node_modules/bootstrap/scss/utilities/api";
+  // scss-docs-end import-stack
+
+  //custom
+  @import "./custom/components/components";
+  /*  @import "./custom/plugins/icons/remixicon";*/
+  /*  @import "./custom/plugins/icons/materialdesignicons";*/
+  @import "./custom/plugins/custom-scrollbar";
+  @import "./custom/pages/pages";
+  @import "./custom/structure/sidemenu";
+
+  .nav-item {
+    cursor: pointer;
+  }
+
+  .dropdown {
+    cursor: pointer;
+  }
+
+  .slick-slide {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .slick-arrow {
+    display: none;
+  }
+
+  .emoji-mart {
+    border: none !important;
+  }
+
+  .emoji-mart-preview {
+    display: none !important;
+  }
+
+  .emoji-mart-bar {
+    border: none !important;
+  }
+
+  .alice-carousel__stage-item {
+    margin-left: 8px;
+    margin-right: 8px !important;
+    width: 71px !important;
+  }
+
+  .input-file {
+    label {
+      margin-bottom: 0;
+    }
+    input[type="file"] {
+      display: none;
+    }
+  }
+
+  .emoji-mart-light {
+    background-color: $card-bg !important;
+  }
+
+  .emoji-mart-search {
+    input {
+      background-color: $card-bg !important;
+      border-color: $card-border-color !important;
+    }
+  }
+
+  .emoji-mart-category-label {
+    span {
+      background-color: $card-bg !important;
+      color: $gray-700;
+    }
+  }
+
+  .emoji-mart-category {
+    .emoji-mart-emoji {
+      &:hover {
+        background-color: $gray-300 !important;
+      }
+
+      &::before {
+        background-color: $gray-300 !important;
+        border-radius: 100% !important;
+      }
+    }
+  }
+  .w-70 {
+    width: 73% !important;
+  }
+
+  .ctext-wrap-content {
+    animation: flyIn 0.6s ease-in-out;
+  }
+
+  .blank-div {
+    width: 36px;
+    height: 36px;
+  }
+
+  .profile-user-dropdown {
+    .dropdown-item {
+      &.active {
+        color: $white;
+        text-decoration: none;
+        background-color: $primary;
+      }
+    }
+  }
+  .dot_remove {
+    .alice-carousel__dots,
+    .alice-carousel__prev-btn,
+    .alice-carousel__next-btn {
+      display: none !important;
+    }
+  }
+  .close {
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    margin: 10px;
+    // background: transparent escape-svg($btn-close-bg-dark) center / $btn-close-width auto no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    width: 1em;
+    height: 1em;
+    z-index: 2;
+  }
+}
+
+@import "./custom/plugins/icons/materialdesignicons";
+@import "./custom/plugins/icons/remixicon";
