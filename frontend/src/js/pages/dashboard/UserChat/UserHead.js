@@ -71,7 +71,7 @@ function UserHead(props) {
                   <img
                     src={props.users[props.active_user].profilePicture}
                     className="rounded-circle avatar-xs"
-                    alt="chatvia"
+                    alt="Chatty"
                   />
                 </div>
               ) : (

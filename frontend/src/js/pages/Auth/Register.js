@@ -79,7 +79,7 @@ const Register = (props) => {
                 <h4> {"Sign up"} </h4>{" "}
                 <p className="text-muted mb-4">
                   {" "}
-                  {"Get your Chatvia account now"}.{" "}
+                  {"Get your Chatty account now"}.{" "}
                 </p>
               </div>
               <Card>
@@ -201,7 +201,7 @@ const Register = (props) => {
                       <div className="mt-4 text-center">
                         <p className="text-muted mb-0">
                           {" "}
-                          {"By registering you agree to the Chatvia"}{" "}
+                          {"By registering you agree to the Chatty"}{" "}
                           <Link to="#" className="text-primary">
                             {" "}
                             {"Terms of Use"}{" "}
@@ -223,9 +223,8 @@ const Register = (props) => {
                 </p>
                 <p>
                   {" "}
-                  ©{"2021 Chatvia"}. {"Crafted with"}{" "}
-                  <i className="mdi mdi-heart text-danger"> </i>{" "}
-                  {"by Themesbrand"}
+                  ©{"2021 Chatty"}. {""}{" "}
+                  <i className="mdi mdi-chat text-danger"> </i> {""}
                 </p>
               </div>{" "}
             </Col>{" "}

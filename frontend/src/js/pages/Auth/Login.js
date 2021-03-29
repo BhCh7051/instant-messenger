@@ -84,7 +84,7 @@ const Login = (props) => {
                 <h4> {"Sign in"} </h4>
                 <p className="text-muted mb-4">
                   {" "}
-                  {"Sign in to continue to Chatvia"}.{" "}
+                  {"Sign in to continue to Chatty"}.{" "}
                 </p>
               </div>
               <Card>
@@ -211,9 +211,8 @@ const Login = (props) => {
                 </p>
                 <p>
                   {" "}
-                  ©{"2021 Chatvia"}. {"Crafted with"}{" "}
-                  <i className="mdi mdi-heart text-danger"> </i>{" "}
-                  {"by Themesbrand"}
+                  ©{"2021 Chatty"}. {""}{" "}
+                  <i className="mdi mdi-chat text-danger"> </i> {""}
                 </p>
               </div>{" "}
             </Col>{" "}

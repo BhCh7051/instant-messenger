@@ -134,9 +134,8 @@ function LockScreen(props) {
                 </p>
                 <p>
                   {" "}
-                  ©{"2021 Chatvia"}. {"Crafted with"}{" "}
-                  <i className="mdi mdi-heart text-danger"> </i>{" "}
-                  {"by Themesbrand"}
+                  ©{"2021 Chatty"}. {""}{" "}
+                  <i className="mdi mdi-chat text-danger"> </i> {""}
                 </p>
               </div>{" "}
             </Col>{" "}

@@ -68,7 +68,7 @@ function Settings(props) {
             <img
               src={avatar1}
               className="rounded-circle avatar-lg img-thumbnail"
-              alt="chatvia"
+              alt="Chatty"
             />
             <Button
               type="button"

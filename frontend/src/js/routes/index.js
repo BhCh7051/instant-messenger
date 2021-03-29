@@ -1,9 +1,8 @@
-import React, { Suspense , useContext } from "react";
+import React, { Suspense, useContext } from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 //import routes
 import { authProtectedRoutes, publicRoutes } from "./routes";
 import { AppContext } from "../context/AppContext";
-
 
 //import layouts
 import NonAuthLayout from "../layouts/NonAuth";
@@ -49,8 +48,8 @@ const AppRoute = ({
  */
 
 const Routes = (props) => {
-const context = useContext(AppContext);
-document.documentElement.classList.add(`${context.theme}`);
+  const context = useContext(AppContext);
+  document.documentElement.classList.add(`${context.theme}`);
   return (
     // rendering the router with layout
     <BrowserRouter>

@@ -7,7 +7,7 @@ const token =
 let users = [
   {
     id: 1,
-    name: "Chatvia",
+    name: "Chatty",
     username: "themesbrand",
     password: "123456",
     email: "admin@themesbrand.com",

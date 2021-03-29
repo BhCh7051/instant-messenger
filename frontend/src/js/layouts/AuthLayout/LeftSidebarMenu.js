@@ -35,7 +35,6 @@ function LeftSidebarMenu(props) {
 
     document.documentElement.classList.remove(`${context.theme}`);
     context.changeTheme(isLight ? "dark" : "light");
-
   };
   const activeTab = props.activeTab;
 
@@ -153,7 +152,7 @@ function LeftSidebarMenu(props) {
               <DropdownToggle nav>
                 <img
                   src={avatar1}
-                  alt="chatvia"
+                  alt="Chatty"
                   className="profile-user rounded-circle"
                 />
               </DropdownToggle>{" "}

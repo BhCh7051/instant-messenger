@@ -209,7 +209,7 @@ class Chats extends Component {
                             <img
                               src={chat.profilePicture}
                               className="rounded-circle avatar-xs"
-                              alt="chatvia"
+                              alt="Chatty"
                             />{" "}
                             {chat.status && (
                               <span className="user-status"> </span>

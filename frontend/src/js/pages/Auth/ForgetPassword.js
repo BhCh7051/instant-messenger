@@ -80,7 +80,7 @@ const ForgetPassword = (props) => {
                 <h4> {"Reset Password"} </h4>{" "}
                 <p className="text-muted mb-4">
                   {" "}
-                  {"Reset Password With Chatvia."}{" "}
+                  {"Reset Password With Chatty."}{" "}
                 </p>
               </div>
               <Card>
@@ -161,9 +161,8 @@ const ForgetPassword = (props) => {
                 </p>
                 <p>
                   {" "}
-                  ©{"2021 Chatvia"}. {"Crafted with"}{" "}
-                  <i className="mdi mdi-heart text-danger"> </i>{" "}
-                  {"by Themesbrand"}
+                  ©{"2021 Chatty"}. {""}{" "}
+                  <i className="mdi mdi-chat text-danger"> </i> {""}
                 </p>
               </div>{" "}
             </Col>{" "}

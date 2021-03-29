@@ -80,7 +80,7 @@ function Profile(props) {
             <img
               src={avatar1}
               className="rounded-circle avatar-lg img-thumbnail"
-              alt="chatvia"
+              alt="Chatty"
             />
           </div>
           <h5 className="font-size-16 mb-1 text-truncate">

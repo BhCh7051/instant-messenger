@@ -100,7 +100,7 @@ function UserProfileSidebar(props) {
               <img
                 src={props.activeUser.profilePicture}
                 className="rounded-circle avatar-lg img-thumbnail"
-                alt="chatvia"
+                alt="Chatty"
               />
             )}
           </div>
@@ -268,7 +268,7 @@ function UserProfileSidebar(props) {
                         <img
                           src={avatar7}
                           className="rounded-circle chat-user-img avatar-xs me-3"
-                          alt="chatvia"
+                          alt="Chatty"
                         />
                       </div>{" "}
                       <div>

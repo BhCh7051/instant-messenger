@@ -21,7 +21,7 @@ class Index extends Component {
 
     //set document title according to page path name
     document.title =
-      currentage + " | Chatvia - Responsive Bootstrap 5 Admin Dashboard";
+      currentage + " | Chatty - Responsive Bootstrap 5 Admin Dashboard";
   }
 
   render() {
