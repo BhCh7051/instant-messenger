@@ -1,6 +1,4 @@
-import React, {Component, useContext } from 'react';
-import { AppContext } from "./context/AppContext";
-
+import React, { Component, useContext } from "react";
 
 //fakebackend
 import fakeBackend from "./helpers/fake-backend";
@@ -25,41 +23,39 @@ fakeBackend();
 
 // // init firebase backend
 // initFirebaseBackend(firebaseConfig);
+
 import("../css/scss/theme.scss");
 
 class App extends Component {
-  const context = useContext(AppContext);
-  document.documentElement.classList.add(`${context.theme}`);
+  state = {
+    data: null,
+  };
 
-state = {
-data: null
-};
-
-componentDidMount() {
+  componentDidMount() {
     // Call our fetch function below once the component mounts
-this.callBackendAPI()
-.then(res => this.setState({data: res.express}))
-.catch(err => console.log(err));
-}
+    this.callBackendAPI()
+      .then((res) => this.setState({ data: res.express }))
+      .catch((err) => console.log(err));
+  }
 
-    // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from App.js
-callBackendAPI = async () => {
-const response = await fetch('/express_backend');
-const body = await response.json();
+  // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from App.js
+  callBackendAPI = async () => {
+    const response = await fetch("/express_backend");
+    const body = await response.json();
 
-if (response.status !== 200) {
-throw Error(body.message)
-}
-return body;
-};
+    if (response.status !== 200) {
+      throw Error(body.message);
+    }
+    return body;
+  };
 
-render() {
-return (
-<React.Fragment>
-<Routes />
-</React.Fragment>
-);
-}
+  render() {
+    return (
+      <React.Fragment>
+        <Routes />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

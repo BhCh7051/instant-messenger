@@ -34,8 +34,8 @@ function LeftSidebarMenu(props) {
     e.preventDefault();
 
     document.documentElement.classList.remove(`${context.theme}`);
-
     context.changeTheme(isLight ? "dark" : "light");
+
   };
   const activeTab = props.activeTab;
 
