@@ -1,9 +1,37 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component, useContext } from 'react';
+import { AppContext } from "./context/AppContext";
+
+
+//fakebackend
+import fakeBackend from "./helpers/fake-backend";
+import Routes from "./routes";
+
+// //Firebase helper
+// import { initFirebaseBackend } from "./helpers/firebase";
+
+// TODO
+fakeBackend();
+
+// const firebaseConfig = {
+// 	apiKey: process.env.REACT_APP_APIKEY,
+// 	authDomain: process.env.REACT_APP_AUTHDOMAIN,
+// 	databaseURL: process.env.REACT_APP_DATABASEURL,
+// 	projectId: process.env.REACT_APP_PROJECTID,
+// 	storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+// 	messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+// 	appId: process.env.REACT_APP_APPID,
+// 	measurementId: process.env.REACT_APP_MEASUREMENTID,
+// };
+
+// // init firebase backend
+// initFirebaseBackend(firebaseConfig);
+import("../css/scss/theme.scss");
 
 class App extends Component {
-    state = {
+    const context = useContext(AppContext);
+    document.documentElement.classList.add(`${context.theme}`);
+
+state = {
         data: null
     };
 
@@ -26,16 +54,11 @@ class App extends Component {
     };
 
     render() {
-        return (
-            <div className="App">
-                <header className="App-header">
-                    <img src={logo} className="App-logo" alt="logo"/>
-                    <h1 className="App-title">Welcome to React</h1>
-                </header>
-                // Render the newly fetched data inside of this.state.data
-                <p className="App-intro">{this.state.data}</p>
-            </div>
-        );
+return (
+<React.Fragment>
+<Routes />
+</React.Fragment>
+);
     }
 }
 

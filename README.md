@@ -82,7 +82,6 @@ cd /client && npm start
 <li><b>React</b>: JavaScript library for building user interfaces.</li>
 <li><b>Redux</b>: State container.</li>
 <li><b>TypeScript</b>: JavaScript superset.</li>
-<li><b>Material UI</b>: Beautiful UI library.</li>
 <li><b>SCSS</b>: CSS preprocessor.</li>
 </ul>
 
