@@ -9,6 +9,13 @@ import { configureStore } from "./js/redux/store";
 
 import reportWebVitals from "./reportWebVitals";
 
+// import socketClient from 'socket.io-client';
+// const server = 'http://127.0.0.1:5000/';
+
+// const socket = socketClient(server);
+// let count = 1;
+// let interval;
+
 ReactDOM.render(
   <Provider store={configureStore()}>
     <AppProvider>
