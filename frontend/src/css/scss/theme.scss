@@ -1,5 +1,4 @@
 .theme.light {
-  /*  @import ' ../../../node_modules/@mdi/font/css/materialdesignicons.min.css';*/
   @import "../../../node_modules/bootstrap/scss/functions";
   //light mode
   @import "./custom/variables";
@@ -183,8 +182,7 @@
 }
 
 .theme.dark {
-  /*  @import url("https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css");
-  @import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");*/
+
   @import "../../../node_modules/bootstrap/scss/functions";
 
   // dark mode
@@ -244,8 +242,6 @@
 
   //custom
   @import "./custom/components/components";
-  /*  @import "./custom/plugins/icons/remixicon";*/
-  /*  @import "./custom/plugins/icons/materialdesignicons";*/
   @import "./custom/plugins/custom-scrollbar";
   @import "./custom/pages/pages";
   @import "./custom/structure/sidemenu";
@@ -302,13 +298,14 @@
     input {
       background-color: $card-bg !important;
       border-color: $card-border-color !important;
+      color: $gray-700 !important;
     }
   }
 
   .emoji-mart-category-label {
     span {
       background-color: $card-bg !important;
-      color: $gray-700;
+      color: $gray-700 !important;
     }
   }
 

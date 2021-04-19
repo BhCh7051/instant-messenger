@@ -239,20 +239,20 @@ function UserChat(props) {
                                   <i className="ri-more-2-fill"> </i>{" "}
                                 </DropdownToggle>{" "}
                                 <DropdownMenu>
-                                  <DropdownItem>
+                                  {/*<DropdownItem>
                                     {" "}
                                     {"Copy"}{" "}
                                     <i className="ri-file-copy-line float-end text-muted">
                                       {" "}
                                     </i>
-                                  </DropdownItem>
-                                  <DropdownItem>
+                                  </DropdownItem>*/}
+                                  {/*<DropdownItem>
                                     {" "}
                                     {"Save"}{" "}
                                     <i className="ri-save-line float-end text-muted">
                                       {" "}
                                     </i>
-                                  </DropdownItem>
+                                  </DropdownItem>*/}
                                   <DropdownItem onClick={toggle}>
                                     {" "}
                                     Forward{" "}

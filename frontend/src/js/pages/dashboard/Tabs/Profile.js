@@ -67,9 +67,8 @@ function Profile(props) {
               </DropdownToggle>{" "}
               <DropdownMenu right>
                 <DropdownItem> {"Edit"} </DropdownItem>{" "}
-                <DropdownItem> {"Action"} </DropdownItem>{" "}
                 <DropdownItem divider />
-                <DropdownItem> {"Another action"} </DropdownItem>{" "}
+
               </DropdownMenu>{" "}
             </Dropdown>{" "}
           </div>{" "}
