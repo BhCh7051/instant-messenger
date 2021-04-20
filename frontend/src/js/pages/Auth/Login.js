@@ -200,7 +200,7 @@ const Login = (props) => {
               <div className="mt-5 text-center">
                 <p>
                   {" "}
-                  {"Don' have an account"} ?{" "}
+                  {"Don't have an account"} ?{" "}
                   <Link
                     to="register"
                     className="font-weight-medium text-primary"
@@ -211,7 +211,7 @@ const Login = (props) => {
                 </p>
                 <p>
                   {" "}
-                  ©{"2021 Chatty"}. {""}{" "}
+                  {"Chatty"}. {""}{" "}
                   <i className="mdi mdi-chat text-danger"> </i> {""}
                 </p>
               </div>{" "}

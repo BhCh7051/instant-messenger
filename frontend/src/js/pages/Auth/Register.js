@@ -223,7 +223,7 @@ const Register = (props) => {
                 </p>
                 <p>
                   {" "}
-                  ©{"2021 Chatty"}. {""}{" "}
+                  {"Chatty"}. {""}{" "}
                   <i className="mdi mdi-chat text-danger"> </i> {""}
                 </p>
               </div>{" "}
