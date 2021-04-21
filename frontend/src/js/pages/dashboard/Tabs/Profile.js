@@ -66,9 +66,7 @@ function Profile(props) {
                 <i className="ri-more-2-fill"> </i>{" "}
               </DropdownToggle>{" "}
               <DropdownMenu right>
-                <DropdownItem> {"Edit"} </DropdownItem>{" "}
-                <DropdownItem divider />
-
+                <DropdownItem> {"Edit"} </DropdownItem> <DropdownItem divider />
               </DropdownMenu>{" "}
             </Dropdown>{" "}
           </div>{" "}

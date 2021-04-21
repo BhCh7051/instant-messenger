@@ -22,7 +22,6 @@ function OnlineUsers(props) {
   };
   return (
     <React.Fragment>
-
       {/* Start user status */}
       <div className="px-4 pb-4 dot_remove" dir="ltr">
         <AliceCarousel
@@ -30,7 +29,8 @@ function OnlineUsers(props) {
           disableDotsControls={false}
           disableButtonsControls={false}
           mouseTracking
-          autoPlay autoPlayInterval="3000"
+          autoPlay
+          autoPlayInterval="3000"
           infinite={true}
         >
           <div className="item">
@@ -43,9 +43,7 @@ function OnlineUsers(props) {
                 />
                 <span className="user-status"> </span>
               </div>
-              <h5 className="font-size-13 text-truncate mt-3 mb-1">
-                Patrick
-              </h5>
+              <h5 className="font-size-13 text-truncate mt-3 mb-1">Patrick</h5>
             </Link>
           </div>
           <div className="item">

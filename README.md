@@ -1,4 +1,5 @@
 # Instant Messenger
+
 <p align="center"><img src="ENTER ICON HERE" alt="gc-logo-nobg" border="0" width="500px"></p>
 
 <h2>Introduction</h2>

@@ -20,8 +20,7 @@ class Index extends Component {
     let currentage = this.capitalizeFirstLetter(this.props.location.pathname);
 
     //set document title according to page path name
-    document.title =
-      currentage + " | Chatty - Admin Dashboard";
+    document.title = currentage + " | Chatty - Admin Dashboard";
   }
 
   render() {

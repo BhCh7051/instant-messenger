@@ -16,6 +16,6 @@ export function configureStore(initialState) {
     composeEnhancers(applyMiddleware(...middlewares))
   );
   sagaMiddleware.run(sagas);
-  
+
   return store;
 }

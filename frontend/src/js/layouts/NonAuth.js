@@ -15,8 +15,7 @@ class NonAuth extends Component {
   componentDidMount() {
     let currentage = this.capitalizeFirstLetter(this.props.location.pathname);
 
-    document.title =
-      currentage + " | Chatty  Admin Dashboard";
+    document.title = currentage + " | Chatty  Admin Dashboard";
   }
   render() {
     return <React.Fragment> {this.props.children} </React.Fragment>;

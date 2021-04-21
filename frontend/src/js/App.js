@@ -1,11 +1,11 @@
 import React, { Component, useContext } from "react";
 // import connect_socket from './socketConnection';
 
-import socketClient from 'socket.io-client';
+import socketClient from "socket.io-client";
 import fakeBackend from "./helpers/fake-backend";
 import Routes from "./routes";
 
-const SERVER = 'http://127.0.0.1:5000';
+const SERVER = "http://127.0.0.1:5000";
 
 //fakebackend
 
@@ -39,32 +39,28 @@ class App extends Component {
   };
 
   componentDidMount() {
-
     // Call our fetch function below once the component mounts
-    
 
-    socket.on('connection', ()=>{
-      console.log('connected to server');
-    })
+    socket.on("connection", () => {
+      console.log("connected to server");
+    });
 
-    socket.on('message', msg=>{
-      console.log('Message received from server: ', msg);
-    })
+    socket.on("message", (msg) => {
+      console.log("Message received from server: ", msg);
+    });
 
-    
     let count = 1;
-    let interval = setInterval(()=>{
-      console.log(`Sending Message ${count}`)
-      socket.emit('message', `Message ${count}`)
+    let interval = setInterval(() => {
+      console.log(`Sending Message ${count}`);
+      socket.emit("message", `Message ${count}`);
       count++;
     }, 3000);
 
-    socket.on('disconnect', (msg)=>{
+    socket.on("disconnect", (msg) => {
       clearInterval(interval);
 
-      console.log('Socket disconnected - ',msg)
-    })
-
+      console.log("Socket disconnected - ", msg);
+    });
 
     this.callBackendAPI()
       .then((res) => this.setState({ data: res.express }))
@@ -83,9 +79,7 @@ class App extends Component {
   };
 
   render() {
-
     return (
-
       <React.Fragment>
         <Routes />
       </React.Fragment>

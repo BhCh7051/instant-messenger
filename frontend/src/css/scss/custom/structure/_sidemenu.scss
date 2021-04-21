@@ -43,6 +43,7 @@
   }
 
   .theme-mode-icon {
+    color: $theme-mode-icon-color;
     &:before {
       content: $theme-mode-icon;
     }

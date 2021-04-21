@@ -153,7 +153,7 @@ function UserHead(props) {
                   </DropdownMenu>{" "}
                 </Dropdown>{" "}
               </li>{" "}
-             {/* <li className="list-inline-item d-none d-lg-inline-block me-2 ms-0">
+              {/* <li className="list-inline-item d-none d-lg-inline-block me-2 ms-0">
                 <button
                   type="button"
                   onClick={toggleCallModal}
@@ -181,7 +181,7 @@ function UserHead(props) {
                   <i className="ri-user-2-line"> </i>{" "}
                 </Button>{" "}
               </li>
-             {/* <li className="list-inline-item">
+              {/* <li className="list-inline-item">
                 <Dropdown isOpen={dropdownOpen1} toggle={toggle1}>
                   <DropdownToggle
                     className="btn nav-btn "

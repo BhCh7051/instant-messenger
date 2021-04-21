@@ -223,8 +223,8 @@ const Register = (props) => {
                 </p>
                 <p>
                   {" "}
-                  {"Chatty"}. {""}{" "}
-                  <i className="mdi mdi-chat text-danger"> </i> {""}
+                  {"Chatty"}. {""} <i className="mdi mdi-chat text-danger"> </i>{" "}
+                  {""}
                 </p>
               </div>{" "}
             </Col>{" "}
