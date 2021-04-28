@@ -23,7 +23,7 @@ const INIT_STATE = {
     //admin is sender and user in receiver
     {
       id: 0,
-      name: "Patrick Hendricks",
+      name: "Pratik",
       profilePicture: avatar2,
       status: "online",
       unRead: 0,
@@ -119,7 +119,7 @@ const INIT_STATE = {
     },
     {
       id: 1,
-      name: "Mark Messer",
+      name: "Manish",
       profilePicture: avatar3,
       status: "away",
       unRead: 2,
@@ -168,7 +168,7 @@ const INIT_STATE = {
         },
         {
           id: 1,
-          userName: "John Smith",
+          userName: "Jasmeet",
           message: "Hello send project images",
           time: "12:00",
           userType: "receiver",
@@ -177,7 +177,7 @@ const INIT_STATE = {
         },
         {
           id: 2,
-          userName: "Steve Walker",
+          userName: "Sahil",
           message: "Images",
           time: "12:05",
           userType: "receiver",
@@ -200,7 +200,7 @@ const INIT_STATE = {
         },
         {
           id: 4,
-          userName: "Galen Rizo",
+          userName: "Rizvi",
           message: "This theme is Awesome!",
           time: "2:06",
           userType: "receiver",
@@ -212,7 +212,7 @@ const INIT_STATE = {
 
     {
       id: 4,
-      name: "Doris Brown",
+      name: "Deepika",
       profilePicture: avatar4,
       status: "online",
       unRead: 0,
@@ -221,7 +221,7 @@ const INIT_STATE = {
       messages: [
         {
           id: 1,
-          userName: "Doris Brown",
+          userName: "Deepika",
           message: "Good Morning",
           time: "10:00",
           userType: "receiver",
@@ -312,7 +312,7 @@ const INIT_STATE = {
       messages: [
         {
           id: 1,
-          userName: "Doris Brown",
+          userName: "Deepika",
           message: "Hello send project images",
           time: "12:00",
           userType: "receiver",
@@ -325,7 +325,7 @@ const INIT_STATE = {
         },
         {
           id: 2,
-          userName: "Steve Walker",
+          userName: "Sahil",
           message: "Images",
           time: "12:05",
           userType: "receiver",
@@ -351,7 +351,7 @@ const INIT_STATE = {
           id: 4,
           userName: "admin",
           message:
-            "@Doris Brown please review this code, and give me feedback asap",
+            "@Deepika please review this code, and give me feedback asap",
           time: "01:31",
           userType: "sender",
           isImageMessage: false,
@@ -359,7 +359,7 @@ const INIT_STATE = {
         },
         {
           id: 5,
-          userName: "John Howard",
+          userName: "John",
           message: "Good Afternoon everyone !",
           time: "2:00",
           userType: "receiver",
@@ -377,7 +377,7 @@ const INIT_STATE = {
         },
         {
           id: 9,
-          userName: "John Howard",
+          userName: "John",
           message: "Next meeting tomorrow 10.00AM",
           time: "2:10",
           userType: "receiver",
@@ -389,7 +389,7 @@ const INIT_STATE = {
 
     {
       id: 6,
-      name: "Steve Walker",
+      name: "Sahil",
       profilePicture: avatar6,
       status: "away",
       unRead: 0,
@@ -421,7 +421,7 @@ const INIT_STATE = {
 
     {
       id: 7,
-      name: "Albert Rodarte",
+      name: "Ashish",
       profilePicture: "Null",
       status: "online",
       unRead: 0,
@@ -462,7 +462,7 @@ const INIT_STATE = {
 
     {
       id: 8,
-      name: "Mirta George",
+      name: "Manishi",
       profilePicture: "Null",
       status: "online",
       unRead: 0,
@@ -518,7 +518,7 @@ const INIT_STATE = {
 
     {
       id: 9,
-      name: "Paul Haynes",
+      name: "Pankaj",
       profilePicture: avatar7,
       status: "away",
       unRead: 0,
@@ -574,7 +574,7 @@ const INIT_STATE = {
 
     {
       id: 2,
-      name: "Jonathan Miller",
+      name: "Jatin",
       profilePicture: avatar2,
       status: "online",
       unRead: 0,
@@ -629,7 +629,7 @@ const INIT_STATE = {
 
     {
       id: 3,
-      name: "Ossie Wilson",
+      name: "Ojaswi",
       profilePicture: avatar3,
       status: "away",
       unRead: 0,
@@ -673,7 +673,7 @@ const INIT_STATE = {
 
     {
       id: 14,
-      name: "Sara Muller",
+      name: "Sara",
       profilePicture: "Null",
       status: "offline",
       unRead: 0,
@@ -726,37 +726,37 @@ const INIT_STATE = {
       members: [
         {
           userId: 1,
-          name: "Sara Muller",
+          name: "Sara",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 2,
-          name: "Ossie Wilson",
+          name: "Ojaswi",
           profilePicture: avatar8,
           role: "admin",
         },
         {
           userId: 3,
-          name: "Jonathan Miller",
+          name: "Jatin",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 4,
-          name: "Paul Haynes",
+          name: "Pankaj",
           profilePicture: avatar7,
           role: null,
         },
         {
           userId: 5,
-          name: "Yana sha",
+          name: "Yana",
           profilePicture: avatar3,
           role: null,
         },
         {
           userId: 6,
-          name: "Steve Walker",
+          name: "Sahil",
           profilePicture: avatar6,
           role: null,
         },
@@ -772,37 +772,37 @@ const INIT_STATE = {
       members: [
         {
           userId: 1,
-          name: "Sara Muller",
+          name: "Sara",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 2,
-          name: "Ossie Wilson",
+          name: "Ojaswi",
           profilePicture: avatar8,
           role: "admin",
         },
         {
           userId: 3,
-          name: "Jonathan Miller",
+          name: "Jatin",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 4,
-          name: "Paul Haynes",
+          name: "Pankaj",
           profilePicture: avatar7,
           role: null,
         },
         {
           userId: 5,
-          name: "Yana sha",
+          name: "Yana",
           profilePicture: avatar3,
           role: null,
         },
         {
           userId: 6,
-          name: "Steve Walker",
+          name: "Sahil",
           profilePicture: avatar6,
           role: null,
         },
@@ -819,37 +819,37 @@ const INIT_STATE = {
       members: [
         {
           userId: 1,
-          name: "Sara Muller",
+          name: "Sara",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 2,
-          name: "Ossie Wilson",
+          name: "Ojaswi",
           profilePicture: avatar8,
           role: "admin",
         },
         {
           userId: 3,
-          name: "Jonathan Miller",
+          name: "Jatin",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 4,
-          name: "Paul Haynes",
+          name: "Pankaj",
           profilePicture: avatar7,
           role: null,
         },
         {
           userId: 5,
-          name: "Yana sha",
+          name: "Yana",
           profilePicture: avatar3,
           role: null,
         },
         {
           userId: 6,
-          name: "Steve Walker",
+          name: "Sahil",
           profilePicture: avatar6,
           role: null,
         },
@@ -865,37 +865,37 @@ const INIT_STATE = {
       members: [
         {
           userId: 1,
-          name: "Sara Muller",
+          name: "Sara",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 2,
-          name: "Ossie Wilson",
+          name: "Ojaswi",
           profilePicture: avatar8,
           role: "admin",
         },
         {
           userId: 3,
-          name: "Jonathan Miller",
+          name: "Jatin",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 4,
-          name: "Paul Haynes",
+          name: "Pankaj",
           profilePicture: avatar7,
           role: null,
         },
         {
           userId: 5,
-          name: "Yana sha",
+          name: "Yana",
           profilePicture: avatar3,
           role: null,
         },
         {
           userId: 6,
-          name: "Steve Walker",
+          name: "Sahil",
           profilePicture: avatar6,
           role: null,
         },
@@ -912,37 +912,37 @@ const INIT_STATE = {
       members: [
         {
           userId: 1,
-          name: "Sara Muller",
+          name: "Sara",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 2,
-          name: "Ossie Wilson",
+          name: "Ojaswi",
           profilePicture: avatar8,
           role: "admin",
         },
         {
           userId: 3,
-          name: "Jonathan Miller",
+          name: "Jatin",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 4,
-          name: "Paul Haynes",
+          name: "Pankaj",
           profilePicture: avatar7,
           role: null,
         },
         {
           userId: 5,
-          name: "Yana sha",
+          name: "Yana",
           profilePicture: avatar3,
           role: null,
         },
         {
           userId: 6,
-          name: "Steve Walker",
+          name: "Sahil",
           profilePicture: avatar6,
           role: null,
         },
@@ -958,37 +958,37 @@ const INIT_STATE = {
       members: [
         {
           userId: 1,
-          name: "Sara Muller",
+          name: "Sara",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 2,
-          name: "Ossie Wilson",
+          name: "Ojaswi",
           profilePicture: avatar8,
           role: "admin",
         },
         {
           userId: 3,
-          name: "Jonathan Miller",
+          name: "Jatin",
           profilePicture: "Null",
           role: null,
         },
         {
           userId: 4,
-          name: "Paul Haynes",
+          name: "Pankaj",
           profilePicture: avatar7,
           role: null,
         },
         {
           userId: 5,
-          name: "Yana sha",
+          name: "Yana",
           profilePicture: avatar3,
           role: null,
         },
         {
           userId: 6,
-          name: "Steve Walker",
+          name: "Sahil",
           profilePicture: avatar6,
           role: null,
         },
@@ -998,83 +998,83 @@ const INIT_STATE = {
   contacts: [
     {
       id: 1,
-      name: "Albert Rodarte",
+      name: "Ashish",
     },
     {
       id: 2,
-      name: "Allison Etter",
+      name: "Aditya",
     },
     {
       id: 3,
-      name: "Craig Smiley",
+      name: "Chirag",
     },
     {
       id: 4,
-      name: "Daniel Clay",
+      name: "Danish",
     },
     {
       id: 5,
-      name: "Doris Brown",
+      name: "Deepika",
     },
     {
       id: 6,
-      name: "Iris Wells",
+      name: "Ishan",
     },
     {
       id: 7,
-      name: "Juan Flakes",
+      name: "Jaiman",
     },
     {
       id: 8,
-      name: "John Hall",
+      name: "Jasmeet",
     },
     {
       id: 9,
-      name: "Joy Southern",
+      name: "John",
     },
     {
       id: 10,
-      name: "Mary Farmer",
+      name: "Mahi",
     },
     {
       id: 11,
-      name: "Mark Messer",
+      name: "Manish",
     },
     {
       id: 12,
-      name: "Michael Hinton",
+      name: "Mitul",
     },
     {
       id: 13,
-      name: "Ossie Wilson",
+      name: "Ojaswi",
     },
     {
       id: 14,
-      name: "Phillis Griffin",
+      name: "Pallavi",
     },
     {
       id: 15,
-      name: "Paul Haynes",
+      name: "Pankaj",
     },
     {
       id: 16,
-      name: "Rocky Jackson",
+      name: "Raj",
     },
     {
       id: 17,
-      name: "Sara Muller",
+      name: "Sara",
     },
     {
       id: 18,
-      name: "Simon Velez",
+      name: "Sachin",
     },
     {
       id: 19,
-      name: "Steve Walker",
+      name: "Sahil",
     },
     {
       id: 20,
-      name: "Hanah Mile",
+      name: "Tarun",
     },
   ],
 };
