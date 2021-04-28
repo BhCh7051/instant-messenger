@@ -65,7 +65,7 @@ function UserHead(props) {
                 >
                   <i className="ri-arrow-left-s-line"> </i>
                 </Link>
-              </div>{" "}
+              </div>
               {props.users[props.active_user].profilePicture !== "Null" ? (
                 <div className="me-3 ms-0">
                   <img
@@ -78,10 +78,9 @@ function UserHead(props) {
                 <div className="chat-user-img align-self-center me-3">
                   <div className="avatar-xs">
                     <span className="avatar-title rounded-circle bg-soft-primary text-primary">
-                      {" "}
-                      {props.users[props.active_user].name.charAt(0)}{" "}
-                    </span>{" "}
-                  </div>{" "}
+                      {props.users[props.active_user].name.charAt(0)}
+                    </span>
+                  </div>
                 </div>
               )}
               <div className="flex-1 overflow-hidden">
@@ -91,35 +90,28 @@ function UserHead(props) {
                     onClick={(e) => openUserSidebar(e)}
                     className="text-reset user-profile-show"
                   >
-                    {" "}
-                    {props.users[props.active_user].name}{" "}
-                  </Link>{" "}
+                    {props.users[props.active_user].name}
+                  </Link>
                   {(() => {
                     switch (props.users[props.active_user].status) {
                       case "online":
                         return (
                           <>
-                            <i className="ri-record-circle-fill font-size-10 text-success d-inline-block ms-1">
-                              {" "}
-                            </i>{" "}
+                            <i className="ri-record-circle-fill font-size-10 text-success d-inline-block ms-1"></i>
                           </>
                         );
 
                       case "away":
                         return (
                           <>
-                            <i className="ri-record-circle-fill font-size-10 text-warning d-inline-block ms-1">
-                              {" "}
-                            </i>{" "}
+                            <i className="ri-record-circle-fill font-size-10 text-warning d-inline-block ms-1"></i>
                           </>
                         );
 
                       case "offline":
                         return (
                           <>
-                            <i className="ri-record-circle-fill font-size-10 text-secondary d-inline-block ms-1">
-                              {" "}
-                            </i>{" "}
+                            <i className="ri-record-circle-fill font-size-10 text-secondary d-inline-block ms-1"></i>
                           </>
                         );
 
@@ -127,21 +119,21 @@ function UserHead(props) {
                         return;
                     }
                   })()}
-                </h5>{" "}
-              </div>{" "}
-            </div>{" "}
-          </Col>{" "}
+                </h5>
+              </div>
+            </div>
+          </Col>
           <Col sm={8} xs={4}>
             <ul className="list-inline user-chat-nav text-end mb-0">
-              <li className="list-inline-item">
+              {/*<li className="list-inline-item">
                 <Dropdown isOpen={dropdownOpen} toggle={toggle}>
                   <DropdownToggle
                     color="none"
                     className="btn nav-btn "
                     type="button"
                   >
-                    <i className="ri-search-line"> </i>{" "}
-                  </DropdownToggle>{" "}
+                    <i className="ri-search-line"> </i>
+                  </DropdownToggle>
                   <DropdownMenu className="p-0 dropdown-menu-end dropdown-menu-md">
                     <div className="search-box p-2">
                       <Input
@@ -149,27 +141,27 @@ function UserHead(props) {
                         className="form-control bg-light border-0"
                         placeholder="Search.."
                       />
-                    </div>{" "}
-                  </DropdownMenu>{" "}
-                </Dropdown>{" "}
-              </li>{" "}
+                    </div>
+                  </DropdownMenu>
+                </Dropdown>
+              </li>*/}
               {/* <li className="list-inline-item d-none d-lg-inline-block me-2 ms-0">
                 <button
                   type="button"
                   onClick={toggleCallModal}
                   className="btn nav-btn"
                 >
-                  <i className="ri-phone-line"> </i>{" "}
-                </button>{" "}
-              </li>{" "}*/}
+                  <i className="ri-phone-line"> </i>
+                </button>
+              </li>*/}
               {/*<li className="list-inline-item d-none d-lg-inline-block me-2 ms-0">
                 <button
                   type="button"
                   onClick={toggleVideoModal}
                   className="btn nav-btn"
                 >
-                  <i className="ri-vidicon-line"> </i>{" "}
-                </button>{" "}
+                  <i className="ri-vidicon-line"> </i>
+                </button>
               </li>*/}
               <li className="list-inline-item d-none d-lg-inline-block">
                 <Button
@@ -178,8 +170,8 @@ function UserHead(props) {
                   onClick={(e) => openUserSidebar(e)}
                   className="nav-btn user-profile-show"
                 >
-                  <i className="ri-user-2-line"> </i>{" "}
-                </Button>{" "}
+                  <i className="ri-user-2-line"> </i>
+                </Button>
               </li>
               {/* <li className="list-inline-item">
                 <Dropdown isOpen={dropdownOpen1} toggle={toggle1}>
@@ -188,51 +180,51 @@ function UserHead(props) {
                     color="none"
                     type="button"
                   >
-                    <i className="ri-more-fill"> </i>{" "}
-                  </DropdownToggle>{" "}
+                    <i className="ri-more-fill"> </i>
+                  </DropdownToggle>
                   <DropdownMenu className="dropdown-menu-end">
                     <DropdownItem
                       className="d-block d-lg-none user-profile-show"
                       onClick={(e) => openUserSidebar(e)}
                     >
-                      {" "}
-                      View profile{" "}
+                      
+                      View profile
                       <i className="ri-user-2-line float-end text-muted"> </i>
                     </DropdownItem>
                     <DropdownItem>
-                      {" "}
-                      Archive{" "}
+                      
+                      Archive
                       <i className="ri-archive-line float-end text-muted"> </i>
                     </DropdownItem>
                     <DropdownItem>
-                      {" "}
-                      Muted{" "}
+                      
+                      Muted
                       <i className="ri-volume-mute-line float-end text-muted">
-                        {" "}
+                        
                       </i>
                     </DropdownItem>
                     <DropdownItem onClick={(e) => deleteMessage(e)}>
-                      {" "}
-                      Delete{" "}
+                      
+                      Delete
                       <i className="ri-delete-bin-line float-end text-muted">
-                        {" "}
+                        
                       </i>
                     </DropdownItem>
-                  </DropdownMenu>{" "}
-                </Dropdown>{" "}
+                  </DropdownMenu>
+                </Dropdown>
               </li>*/}
-            </ul>{" "}
-          </Col>{" "}
-        </Row>{" "}
+            </ul>
+          </Col>
+        </Row>
       </div>
-      {/* Start Audiocall Modal */}{" "}
+      {/* Start Audiocall Modal 
       <Modal tabIndex="-1" isOpen={Callmodal} toggle={toggleCallModal} centered>
         <ModalBody>
           <div className="text-center p-4">
             <div className="avatar-lg mx-auto mb-4">
               <img src={user} alt="" className="img-thumbnail rounded-circle" />
             </div>
-            <h5 className="text-truncate"> Doris Brown </h5>{" "}
+            <h5 className="text-truncate"> Deepika Brown </h5>
             <p className="text-muted"> Start Audio Call </p>
             <div className="mt-5">
               <ul className="list-inline mb-1">
@@ -243,26 +235,26 @@ function UserHead(props) {
                     onClick={toggleCallModal}
                   >
                     <span className="avatar-title bg-transparent font-size-20">
-                      <i className="ri-close-fill"> </i>{" "}
-                    </span>{" "}
-                  </button>{" "}
-                </li>{" "}
+                      <i className="ri-close-fill"> </i>
+                    </span>
+                  </button>
+                </li>
                 <li className="list-inline-item px-2">
                   <button
                     type="button"
                     className="btn btn-success avatar-sm rounded-circle"
                   >
                     <span className="avatar-title bg-transparent font-size-20">
-                      <i className="ri-phone-fill"> </i>{" "}
-                    </span>{" "}
-                  </button>{" "}
-                </li>{" "}
-              </ul>{" "}
-            </div>{" "}
-          </div>{" "}
-        </ModalBody>{" "}
-      </Modal>
-      {/* Start VideoCall Modal */}{" "}
+                      <i className="ri-phone-fill"> </i>
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </ModalBody>
+      </Modal>*/}
+      {/*       Start VideoCall Modal 
       <Modal
         tabIndex="-1"
         isOpen={Videomodal}
@@ -274,7 +266,7 @@ function UserHead(props) {
             <div className="avatar-lg mx-auto mb-4">
               <img src={user} alt="" className="img-thumbnail rounded-circle" />
             </div>
-            <h5 className="text-truncate"> Doris Brown </h5>{" "}
+            <h5 className="text-truncate"> Deepika Brown </h5>
             <p className="text-muted"> Start Video Call </p>
             <div className="mt-5">
               <ul className="list-inline mb-1">
@@ -285,25 +277,25 @@ function UserHead(props) {
                     onClick={toggleVideoModal}
                   >
                     <span className="avatar-title bg-transparent font-size-20">
-                      <i className="ri-close-fill"> </i>{" "}
-                    </span>{" "}
-                  </button>{" "}
-                </li>{" "}
+                      <i className="ri-close-fill"> </i>
+                    </span>
+                  </button>
+                </li>
                 <li className="list-inline-item px-2">
                   <button
                     type="button"
                     className="btn btn-success avatar-sm rounded-circle"
                   >
                     <span className="avatar-title bg-transparent font-size-20">
-                      <i className="ri-vidicon-fill"> </i>{" "}
-                    </span>{" "}
-                  </button>{" "}
-                </li>{" "}
-              </ul>{" "}
-            </div>{" "}
-          </div>{" "}
-        </ModalBody>{" "}
-      </Modal>{" "}
+                      <i className="ri-vidicon-fill"> </i>
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </ModalBody>
+      </Modal>*/}
     </React.Fragment>
   );
 }

@@ -101,32 +101,30 @@ class Contacts extends Component {
           <div className="p-4">
             <div className="user-chat-nav float-end">
               <div id="add-contact">
-                {" "}
-                {/* Button trigger modal */}{" "}
+                {/* Button trigger modal */}
                 <Button
                   type="button"
                   color="link"
                   onClick={this.toggle}
                   className="text-decoration-none text-muted font-size-18 py-0"
                 >
-                  <i className="ri-user-add-line"> </i>{" "}
-                </Button>{" "}
-              </div>{" "}
+                  <i className="ri-user-add-line"> </i>
+                </Button>
+              </div>
               <UncontrolledTooltip target="add-contact" placement="bottom">
-                Add Contact{" "}
-              </UncontrolledTooltip>{" "}
-            </div>{" "}
+                Add Contact
+              </UncontrolledTooltip>
+            </div>
             <h4 className="mb-4"> Contacts </h4>
-            {/* Start Add contact Modal */}{" "}
+            {/* Start Add contact Modal */}
             <Modal isOpen={this.state.modal} centered toggle={this.toggle}>
               <ModalHeader
                 tag="h5"
                 className="font-size-16"
                 toggle={this.toggle}
               >
-                {" "}
-                {"Add Contacts"}{" "}
-              </ModalHeader>{" "}
+                {"Add Contacts"}
+              </ModalHeader>
               <ModalBody className="p-4">
                 <Form>
                   <div className="mb-4">
@@ -134,46 +132,40 @@ class Contacts extends Component {
                       className="form-label"
                       htmlFor="addcontactemail-input"
                     >
-                      {" "}
-                      {"Email"}{" "}
-                    </Label>{" "}
+                      {"Email"}
+                    </Label>
                     <Input
                       type="email"
                       className="form-control"
                       id="addcontactemail-input"
                       placeholder="Enter Email"
                     />
-                  </div>{" "}
+                  </div>
                   <div>
                     <Label
                       className="form-label"
                       htmlFor="addcontact-invitemessage-input"
                     >
-                      {" "}
-                      {"Invatation Message"}{" "}
-                    </Label>{" "}
+                      {"Invatation Message"}
+                    </Label>
                     <textarea
                       className="form-control"
                       id="addcontact-invitemessage-input"
                       rows="3"
                       placeholder="Enter Message"
-                    >
-                      {" "}
-                    </textarea>{" "}
-                  </div>{" "}
-                </Form>{" "}
-              </ModalBody>{" "}
+                    ></textarea>
+                  </div>
+                </Form>
+              </ModalBody>
               <ModalFooter>
                 <Button type="button" color="link" onClick={this.toggle}>
-                  {" "}
-                  Close{" "}
-                </Button>{" "}
+                  Close
+                </Button>
                 <Button type="button" color="primary">
-                  {" "}
-                  Invite Contact{" "}
-                </Button>{" "}
-              </ModalFooter>{" "}
-            </Modal>{" "}
+                  Invite Contact
+                </Button>
+              </ModalFooter>
+            </Modal>
             {/* End Add contact Modal */}
             <div className="search-box chat-search-box">
               <InputGroup size="lg" className="bg-light rounded-lg">
@@ -182,19 +174,19 @@ class Contacts extends Component {
                   className="text-decoration-none text-muted pr-1"
                   type="button"
                 >
-                  <i className="ri-search-line search-icon font-size-18"> </i>{" "}
-                </Button>{" "}
+                  <i className="ri-search-line search-icon font-size-18"> </i>
+                </Button>
                 <Input
                   type="text"
                   className="form-control bg-light "
                   placeholder={"Search users.."}
-                />{" "}
-              </InputGroup>{" "}
-            </div>{" "}
-            {/* End search-box */}{" "}
-          </div>{" "}
+                />
+              </InputGroup>
+            </div>
+            {/* End search-box */}
+          </div>
           {/* end p-4 */}
-          {/* Start contact lists */}{" "}
+          {/* Start contact lists */}
           <SimpleBar
             style={{
               maxHeight: "100%",
@@ -204,55 +196,42 @@ class Contacts extends Component {
           >
             {sortedContacts.map((contact, key) => (
               <div key={key} className={key + 1 === 1 ? "" : "mt-3"}>
-                <div className="p-3 fw-bold text-primary">
-                  {" "}
-                  {contact.group}{" "}
-                </div>
+                <div className="p-3 fw-bold text-primary">{contact.group}</div>
                 <ul className="list-unstyled contact-list">
-                  {" "}
                   {contact.children.map((child, key) => (
                     <li key={key}>
                       <div className="d-flex align-items-center">
                         <div className="flex-1">
-                          <h5 className="font-size-14 m-0"> {child.name} </h5>{" "}
-                        </div>{" "}
+                          <h5 className="font-size-14 m-0"> {child.name} </h5>
+                        </div>
                         <UncontrolledDropdown>
                           <DropdownToggle tag="a" className="text-muted">
-                            <i className="ri-more-2-fill"> </i>{" "}
-                          </DropdownToggle>{" "}
+                            <i className="ri-more-2-fill"> </i>
+                          </DropdownToggle>
                           <DropdownMenu className="dropdown-menu-end">
                             <DropdownItem>
-                              {" "}
-                              {"Share"}{" "}
-                              <i className="ri-share-line float-end text-muted">
-                                {" "}
-                              </i>
+                              {"Share"}
+                              <i className="ri-share-line float-end text-muted"></i>
                             </DropdownItem>
                             <DropdownItem>
-                              {" "}
-                              {"Block"}{" "}
-                              <i className="ri-forbid-line float-end text-muted">
-                                {" "}
-                              </i>
+                              {"Block"}
+                              <i className="ri-forbid-line float-end text-muted"></i>
                             </DropdownItem>
                             <DropdownItem>
-                              {" "}
-                              {"Remove"}{" "}
-                              <i className="ri-delete-bin-line float-end text-muted">
-                                {" "}
-                              </i>
+                              {"Remove"}
+                              <i className="ri-delete-bin-line float-end text-muted"></i>
                             </DropdownItem>
-                          </DropdownMenu>{" "}
-                        </UncontrolledDropdown>{" "}
-                      </div>{" "}
+                          </DropdownMenu>
+                        </UncontrolledDropdown>
+                      </div>
                     </li>
-                  ))}{" "}
-                </ul>{" "}
+                  ))}
+                </ul>
               </div>
             ))}
-          </SimpleBar>{" "}
-          {/* end contact lists */}{" "}
-        </div>{" "}
+          </SimpleBar>
+          {/* end contact lists */}
+        </div>
       </React.Fragment>
     );
   }

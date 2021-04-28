@@ -8,9 +8,9 @@ let users = [
   {
     id: 1,
     name: "Chatty",
-    username: "themesbrand",
+    username: "chatty",
     password: "123456",
-    email: "admin@themesbrand.com",
+    email: "admin@chatty",
     role: "role",
     token: token,
   },

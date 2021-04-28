@@ -57,10 +57,9 @@ function LockScreen(props) {
                     className="logo logo-light"
                   />
                 </Link>
-                <h4> {"Lock screen"} </h4>{" "}
+                <h4> {"Lock screen"} </h4>
                 <p className="text-muted mb-4">
-                  {" "}
-                  {"Enter your password to unlock the screen!"}{" "}
+                  {"Enter your password to unlock the screen!"}
                 </p>
               </div>
               <Card>
@@ -72,15 +71,15 @@ function LockScreen(props) {
                         className="rounded-circle img-thumbnail avatar-lg"
                         alt="thumbnail"
                       />
-                      <h5 className="font-size-15 mt-3"> {"Priti Singh"} </h5>{" "}
-                    </div>{" "}
+                      <h5 className="font-size-15 mt-3"> {"Priti Singh"} </h5>
+                    </div>
                     <Form onSubmit={formik.handleSubmit}>
                       <FormGroup className="mb-4">
-                        <Label className="form-label"> {"Password"} </Label>{" "}
+                        <Label className="form-label"> {"Password"} </Label>
                         <InputGroup className="mb-3 bg-soft-light input-group-lg rounded-lg">
                           <span className="input-group-text border-light text-muted">
-                            <i className="ri-lock-2-line"> </i>{" "}
-                          </span>{" "}
+                            <i className="ri-lock-2-line"> </i>
+                          </span>
                           <Input
                             type="password"
                             id="password"
@@ -95,14 +94,13 @@ function LockScreen(props) {
                                 ? true
                                 : false
                             }
-                          />{" "}
+                          />
                           {formik.touched.password && formik.errors.password ? (
                             <FormFeedback type="invalid">
-                              {" "}
-                              {formik.errors.password}{" "}
+                              {formik.errors.password}
                             </FormFeedback>
                           ) : null}
-                        </InputGroup>{" "}
+                        </InputGroup>
                       </FormGroup>
 
                       <div className="d-grid">
@@ -112,33 +110,29 @@ function LockScreen(props) {
                           className=" waves-effect waves-light"
                           type="submit"
                         >
-                          {" "}
-                          Unlock{" "}
-                        </Button>{" "}
+                          Unlock
+                        </Button>
                       </div>
-                    </Form>{" "}
-                  </div>{" "}
-                </CardBody>{" "}
+                    </Form>
+                  </div>
+                </CardBody>
               </Card>
               <div className="mt-5 text-center">
                 <p>
-                  {" "}
-                  {"Not you"} ? {"return"}{" "}
+                  {"Not you"} ? {"return"}
                   <Link to="login" className="font-weight-medium text-primary">
-                    {" "}
-                    {"Signin"}{" "}
-                  </Link>{" "}
+                    {"Signin"}
+                  </Link>
                 </p>
                 <p>
-                  {" "}
-                  {"Chatty"}. {""} <i className="mdi mdi-chat text-danger"> </i>{" "}
+                  {"Chatty"}. {""} <i className="mdi mdi-chat text-danger"> </i>
                   {""}
                 </p>
-              </div>{" "}
-            </Col>{" "}
-          </Row>{" "}
-        </Container>{" "}
-      </div>{" "}
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </React.Fragment>
   );
 }

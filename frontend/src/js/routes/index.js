@@ -34,7 +34,6 @@ const AppRoute = ({
         // authorised so return component
         return (
           <Layout>
-            {" "}
             <Component {...props} />
           </Layout>
         );
@@ -55,10 +54,8 @@ const Routes = (props) => {
     <BrowserRouter>
       <React.Fragment>
         <Suspense fallback={<div> </div>}>
-          {" "}
           <Switch>
-            {" "}
-            {/* public routes */}{" "}
+            {/* public routes */}
             {publicRoutes.map((route, idx) => (
               <AppRoute
                 path={route.path}
@@ -68,7 +65,7 @@ const Routes = (props) => {
                 isAuthProtected={false}
               />
             ))}
-            {/* private/auth protected routes */}{" "}
+            {/* private/auth protected routes */}
             {authProtectedRoutes.map((route, idx) => (
               <AppRoute
                 path={route.path}
@@ -77,10 +74,10 @@ const Routes = (props) => {
                 key={idx}
                 isAuthProtected={true}
               />
-            ))}{" "}
-          </Switch>{" "}
-        </Suspense>{" "}
-      </React.Fragment>{" "}
+            ))}
+          </Switch>
+        </Suspense>
+      </React.Fragment>
     </BrowserRouter>
   );
 };

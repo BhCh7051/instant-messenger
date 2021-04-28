@@ -8,7 +8,7 @@ import {
 const INIT_STATE = {
   activeTab: "chat",
   userSidebar: false,
-  conversationName: "Doris Brown",
+  conversationName: "Deepika Brown",
 };
 
 const Layout = (state = INIT_STATE, action) => {

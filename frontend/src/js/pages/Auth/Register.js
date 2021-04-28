@@ -76,32 +76,29 @@ const Register = (props) => {
                     className="logo logo-light"
                   />
                 </Link>
-                <h4> {"Sign up"} </h4>{" "}
+                <h4> {"Sign up"} </h4>
                 <p className="text-muted mb-4">
-                  {" "}
-                  {"Get your Chatty account now"}.{" "}
+                  {"Get your Chatty account now"}.
                 </p>
               </div>
               <Card>
                 <CardBody className="p-4">
-                  {" "}
                   {props.error && (
                     <Alert variant="danger"> {props.error} </Alert>
-                  )}{" "}
+                  )}
                   {props.user && (
                     <Alert variant="success">
-                      {" "}
-                      Thank You for registering with us!{" "}
+                      Thank You for registering with us!
                     </Alert>
-                  )}{" "}
+                  )}
                   <div className="p-3">
                     <Form onSubmit={formik.handleSubmit}>
                       <div className="mb-3">
-                        <Label className="form-label"> {"Email"} </Label>{" "}
+                        <Label className="form-label"> {"Email"} </Label>
                         <InputGroup className="input-group bg-soft-light rounded-3 mb-3">
                           <span className="input-group-text text-muted">
-                            <i className="ri-mail-line"> </i>{" "}
-                          </span>{" "}
+                            <i className="ri-mail-line"> </i>
+                          </span>
                           <Input
                             type="text"
                             id="email"
@@ -116,22 +113,21 @@ const Register = (props) => {
                                 ? true
                                 : false
                             }
-                          />{" "}
+                          />
                           {formik.touched.email && formik.errors.email ? (
                             <FormFeedback type="invalid">
-                              {" "}
-                              {formik.errors.email}{" "}
+                              {formik.errors.email}
                             </FormFeedback>
-                          ) : null}{" "}
-                        </InputGroup>{" "}
+                          ) : null}
+                        </InputGroup>
                       </div>
 
                       <div className="mb-3">
-                        <Label className="form-label"> {"Username"} </Label>{" "}
+                        <Label className="form-label"> {"Username"} </Label>
                         <InputGroup className="mb-3 bg-soft-light input-group-lg rounded-lg">
                           <span className="input-group-text border-light text-muted">
-                            <i className="ri-user-2-line"> </i>{" "}
-                          </span>{" "}
+                            <i className="ri-user-2-line"> </i>
+                          </span>
                           <Input
                             type="text"
                             id="username"
@@ -146,22 +142,21 @@ const Register = (props) => {
                                 ? true
                                 : false
                             }
-                          />{" "}
+                          />
                           {formik.touched.username && formik.errors.username ? (
                             <FormFeedback type="invalid">
-                              {" "}
-                              {formik.errors.username}{" "}
+                              {formik.errors.username}
                             </FormFeedback>
-                          ) : null}{" "}
-                        </InputGroup>{" "}
+                          ) : null}
+                        </InputGroup>
                       </div>
 
                       <FormGroup className="mb-4">
-                        <Label className="form-label"> {"Password"} </Label>{" "}
+                        <Label className="form-label"> {"Password"} </Label>
                         <InputGroup className="mb-3 bg-soft-light input-group-lg rounded-lg">
                           <span className="input-group-text border-light text-muted">
-                            <i className="ri-lock-2-line"> </i>{" "}
-                          </span>{" "}
+                            <i className="ri-lock-2-line"> </i>
+                          </span>
                           <Input
                             type="password"
                             id="password"
@@ -176,14 +171,13 @@ const Register = (props) => {
                                 ? true
                                 : false
                             }
-                          />{" "}
+                          />
                           {formik.touched.password && formik.errors.password ? (
                             <FormFeedback type="invalid">
-                              {" "}
-                              {formik.errors.password}{" "}
+                              {formik.errors.password}
                             </FormFeedback>
                           ) : null}
-                        </InputGroup>{" "}
+                        </InputGroup>
                       </FormGroup>
 
                       <div className="d-grid">
@@ -193,44 +187,38 @@ const Register = (props) => {
                           className=" waves-effect waves-light"
                           type="submit"
                         >
-                          {" "}
-                          Sign up{" "}
-                        </Button>{" "}
+                          Sign up
+                        </Button>
                       </div>
 
                       <div className="mt-4 text-center">
                         <p className="text-muted mb-0">
-                          {" "}
-                          {"By registering you agree to the Chatty"}{" "}
+                          {"By registering you agree to the Chatty"}
                           <Link to="#" className="text-primary">
-                            {" "}
-                            {"Terms of Use"}{" "}
+                            {"Terms of Use"}
                           </Link>
                         </p>
                       </div>
-                    </Form>{" "}
-                  </div>{" "}
-                </CardBody>{" "}
+                    </Form>
+                  </div>
+                </CardBody>
               </Card>
               <div className="mt-5 text-center">
                 <p>
-                  {" "}
-                  {"Already have an account"} ?{" "}
+                  {"Already have an account"} ?
                   <Link to="/login" className="font-weight-medium text-primary">
-                    {" "}
-                    {"Signin"}{" "}
-                  </Link>{" "}
+                    {"Signin"}
+                  </Link>
                 </p>
                 <p>
-                  {" "}
-                  {"Chatty"}. {""} <i className="mdi mdi-chat text-danger"> </i>{" "}
+                  {"Chatty"}. {""} <i className="mdi mdi-chat text-danger"> </i>
                   {""}
                 </p>
-              </div>{" "}
-            </Col>{" "}
-          </Row>{" "}
-        </Container>{" "}
-      </div>{" "}
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </React.Fragment>
   );
 };

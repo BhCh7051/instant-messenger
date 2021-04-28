@@ -43,7 +43,7 @@ function OnlineUsers(props) {
                 />
                 <span className="user-status"> </span>
               </div>
-              <h5 className="font-size-13 text-truncate mt-3 mb-1">Patrick</h5>
+              <h5 className="font-size-13 text-truncate mt-3 mb-1">Prateek</h5>
             </Link>
           </div>
           <div className="item">
@@ -56,7 +56,7 @@ function OnlineUsers(props) {
                 />
                 <span className="user-status"> </span>
               </div>
-              <h5 className="font-size-13 text-truncate mt-3 mb-1"> Doris </h5>
+              <h5 className="font-size-13 text-truncate mt-3 mb-1">Deepika</h5>
             </Link>
           </div>
           <div className="item">
@@ -69,7 +69,7 @@ function OnlineUsers(props) {
                 />
                 <span className="user-status"> </span>
               </div>
-              <h5 className="font-size-13 text-truncate mt-3 mb-1"> Emily </h5>
+              <h5 className="font-size-13 text-truncate mt-3 mb-1"> Esha </h5>
             </Link>
           </div>
           <div className="item">
@@ -82,7 +82,7 @@ function OnlineUsers(props) {
                 />
                 <span className="user-status"> </span>
               </div>
-              <h5 className="font-size-13 text-truncate mt-3 mb-1"> Steve </h5>
+              <h5 className="font-size-13 text-truncate mt-3 mb-1"> Sahil </h5>
             </Link>
           </div>
           <div className="item">
@@ -93,7 +93,7 @@ function OnlineUsers(props) {
                 </span>
                 <span className="user-status"> </span>
               </div>
-              <h5 className="font-size-13 text-truncate mt-3 mb-1"> Teresa </h5>
+              <h5 className="font-size-13 text-truncate mt-3 mb-1"> Jatin </h5>
             </Link>
           </div>
         </AliceCarousel>

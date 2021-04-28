@@ -73,15 +73,12 @@ class SelectContact extends Component {
   render() {
     return (
       <React.Fragment>
-        {" "}
         {sortedContacts.map((contact, key) => (
           <div key={key}>
             <div className="p-3 font-weight-bold text-primary">
-              {" "}
-              {contact.group}{" "}
+              {contact.group}
             </div>
             <ul className="list-unstyled contact-list">
-              {" "}
               {contact.children.map((child, keyChild) => (
                 <li key={keyChild}>
                   <div className="form-check">
@@ -91,20 +88,19 @@ class SelectContact extends Component {
                       onChange={(e) => this.props.handleCheck(e, child.id)}
                       id={"memberCheck" + child.id}
                       value={child.name}
-                    />{" "}
+                    />
                     <Label
                       className="form-check-label"
                       htmlFor={"memberCheck" + child.id}
                     >
-                      {" "}
-                      {child.name}{" "}
-                    </Label>{" "}
-                  </div>{" "}
+                      {child.name}
+                    </Label>
+                  </div>
                 </li>
-              ))}{" "}
-            </ul>{" "}
+              ))}
+            </ul>
           </div>
-        ))}{" "}
+        ))}
       </React.Fragment>
     );
   }

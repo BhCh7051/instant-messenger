@@ -82,19 +82,17 @@ function UserProfileSidebar(props) {
               className="nav-btn"
               id="user-profile-hide"
             >
-              <i className="ri-close-line"> </i>{" "}
-            </Button>{" "}
-          </div>{" "}
+              <i className="ri-close-line"> </i>
+            </Button>
+          </div>
         </div>
         <div className="text-center p-4 border-bottom">
           <div className="mb-4 d-flex justify-content-center">
-            {" "}
             {props.activeUser.profilePicture === "Null" ? (
               <div className="avatar-lg">
                 <span className="avatar-title rounded-circle bg-soft-primary text-primary font-size-24">
-                  {" "}
-                  {props.activeUser.name.charAt(0)}{" "}
-                </span>{" "}
+                  {props.activeUser.name.charAt(0)}
+                </span>
               </div>
             ) : (
               <img
@@ -105,37 +103,29 @@ function UserProfileSidebar(props) {
             )}
           </div>
           <h5 className="font-size-16 mb-1 text-truncate">
-            {" "}
-            {props.activeUser.name}{" "}
-          </h5>{" "}
+            {props.activeUser.name}
+          </h5>
           <p className="text-muted text-truncate mb-1">
-            {" "}
             {(() => {
               switch (props.activeUser.status) {
                 case "online":
                   return (
                     <>
-                      <i className="ri-record-circle-fill font-size-10 text-success me-1">
-                        {" "}
-                      </i>{" "}
+                      <i className="ri-record-circle-fill font-size-10 text-success me-1"></i>
                     </>
                   );
 
                 case "away":
                   return (
                     <>
-                      <i className="ri-record-circle-fill font-size-10 text-warning me-1">
-                        {" "}
-                      </i>{" "}
+                      <i className="ri-record-circle-fill font-size-10 text-warning me-1"></i>
                     </>
                   );
 
                 case "offline":
                   return (
                     <>
-                      <i className="ri-record-circle-fill font-size-10 text-secondary me-1">
-                        {" "}
-                      </i>{" "}
+                      <i className="ri-record-circle-fill font-size-10 text-secondary me-1"></i>
                     </>
                   );
 
@@ -143,11 +133,11 @@ function UserProfileSidebar(props) {
                   return;
               }
             })()}
-            Active{" "}
-          </p>{" "}
-        </div>{" "}
+            Active
+          </p>
+        </div>
         {/* End profile user */}
-        {/* Start user-profile-desc */}{" "}
+        {/* Start user-profile-desc */}
         <SimpleBar
           style={{
             maxHeight: "100%",
@@ -156,18 +146,16 @@ function UserProfileSidebar(props) {
         >
           <div className="text-muted">
             <p className="mb-4">
-              {" "}
               "
               {
                 "If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual."
               }
-              "{" "}
-            </p>{" "}
+              "
+            </p>
           </div>
           <div id="profile-user-accordion" className="custom-accordion">
             <Card className="shadow-none border mb-2">
-              {" "}
-              {/* import collaps */}{" "}
+              {/* import collaps */}
               <CustomCollapse
                 title="About"
                 iconClass="ri-user-2-line"
@@ -175,40 +163,38 @@ function UserProfileSidebar(props) {
                 toggleCollapse={toggleCollapse1}
               >
                 <div>
-                  <p className="text-muted mb-1"> {"Name"} </p>{" "}
-                  <h5 className="font-size-14"> {props.activeUser.name} </h5>{" "}
+                  <p className="text-muted mb-1"> {"Name"} </p>
+                  <h5 className="font-size-14"> {props.activeUser.name} </h5>
                 </div>
                 <div className="mt-4">
-                  <p className="text-muted mb-1"> {"Email"} </p>{" "}
-                  <h5 className="font-size-14"> {props.activeUser.email} </h5>{" "}
+                  <p className="text-muted mb-1"> {"Email"} </p>
+                  <h5 className="font-size-14"> {props.activeUser.email} </h5>
                 </div>
                 <div className="mt-4">
-                  <p className="text-muted mb-1"> {"Time"} </p>{" "}
-                  <h5 className="font-size-14"> 11: 40 AM </h5>{" "}
+                  <p className="text-muted mb-1"> {"Time"} </p>
+                  <h5 className="font-size-14"> 11: 40 AM </h5>
                 </div>
                 <div className="mt-4">
-                  <p className="text-muted mb-1"> {"Location"} </p>{" "}
-                  <h5 className="font-size-14 mb-0"> Mumbai, India </h5>{" "}
-                </div>{" "}
-              </CustomCollapse>{" "}
-            </Card>{" "}
+                  <p className="text-muted mb-1"> {"Location"} </p>
+                  <h5 className="font-size-14 mb-0"> Mumbai, India </h5>
+                </div>
+              </CustomCollapse>
+            </Card>
             {/* End About card */}
             <Card className="mb-1 shadow-none border">
-              {" "}
-              {/* import collaps */}{" "}
+              {/* import collaps */}
               <CustomCollapse
                 title="Attached Files"
                 iconClass="ri-attachment-line"
                 isOpen={isOpen2}
                 toggleCollapse={toggleCollapse2}
               >
-                {/* attached files */} <AttachedFiles files={files} />{" "}
-              </CustomCollapse>{" "}
+                {/* attached files */} <AttachedFiles files={files} />
+              </CustomCollapse>
             </Card>
             {props.activeUser.isGroup === true && (
               <Card className="mb-1 shadow-none border">
-                {" "}
-                {/* import collaps */}{" "}
+                {/* import collaps */}
                 <CustomCollapse
                   title="Members"
                   iconClass="ri-group-line"
@@ -220,47 +206,44 @@ function UserProfileSidebar(props) {
                       <div className="chat-user-img align-self-center me-3">
                         <div className="avatar-xs">
                           <span className="avatar-title rounded-circle bg-soft-primary text-primary">
-                            S{" "}
-                          </span>{" "}
-                        </div>{" "}
-                      </div>{" "}
+                            S
+                          </span>
+                        </div>
+                      </div>
                       <div>
                         <div className="text-left">
                           <h5 className="font-size-14 mb-1">
-                            {" "}
-                            {"Sara Muller"}{" "}
+                            {"Sara Muller"}
                             <Badge
                               color="danger"
                               className="badge-soft-danger float-end"
                             >
-                              {" "}
-                              {"Admin"}{" "}
-                            </Badge>{" "}
-                          </h5>{" "}
-                          {/* <p className="text-muted font-size-13 mb-0">{member.status}</p> */}{" "}
-                        </div>{" "}
-                      </div>{" "}
-                    </div>{" "}
+                              {"Admin"}
+                            </Badge>
+                          </h5>
+                          {/* <p className="text-muted font-size-13 mb-0">{member.status}</p> */}
+                        </div>
+                      </div>
+                    </div>
                   </Card>
                   <Card className="p-2 mb-2">
                     <div className="d-flex align-items-center">
                       <div className="chat-user-img align-self-center me-3">
                         <div className="avatar-xs">
                           <span className="avatar-title rounded-circle bg-soft-primary text-primary">
-                            O{" "}
-                          </span>{" "}
-                        </div>{" "}
-                      </div>{" "}
+                            O
+                          </span>
+                        </div>
+                      </div>
                       <div>
                         <div className="text-left">
                           <h5 className="font-size-14 mb-1">
-                            {" "}
-                            {"Ossie Wilson"}{" "}
-                          </h5>{" "}
-                          {/* <p className="text-muted font-size-13 mb-0">{member.status}</p> */}{" "}
-                        </div>{" "}
-                      </div>{" "}
-                    </div>{" "}
+                            {"Ossie Wilson"}
+                          </h5>
+                          {/* <p className="text-muted font-size-13 mb-0">{member.status}</p> */}
+                        </div>
+                      </div>
+                    </div>
                   </Card>
                   <Card className="p-2 mb-2">
                     <div className="d-flex align-items-center">
@@ -270,24 +253,21 @@ function UserProfileSidebar(props) {
                           className="rounded-circle chat-user-img avatar-xs me-3"
                           alt="Chatty"
                         />
-                      </div>{" "}
+                      </div>
                       <div>
                         <div className="text-left">
-                          <h5 className="font-size-14 mb-1">
-                            {" "}
-                            {"Paul Haynes"}{" "}
-                          </h5>{" "}
-                          {/* <p className="text-muted font-size-13 mb-0">{member.status}</p> */}{" "}
-                        </div>{" "}
-                      </div>{" "}
-                    </div>{" "}
-                  </Card>{" "}
-                </CustomCollapse>{" "}
+                          <h5 className="font-size-14 mb-1">{"Paul Haynes"}</h5>
+                          {/* <p className="text-muted font-size-13 mb-0">{member.status}</p> */}
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+                </CustomCollapse>
               </Card>
-            )}{" "}
-          </div>{" "}
-        </SimpleBar>{" "}
-        {/* end user-profile-desc */}{" "}
+            )}
+          </div>
+        </SimpleBar>
+        {/* end user-profile-desc */}
       </div>
     </React.Fragment>
   );

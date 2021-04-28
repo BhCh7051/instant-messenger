@@ -15,8 +15,7 @@ class Index extends Component {
   render() {
     return (
       <React.Fragment>
-        {" "}
-        {/* chat left sidebar */}{" "}
+        {/* chat left sidebar */}
         <ChatLeftSidebar recentChatList={this.props.users} />
         {/* user chat */} <UserChat recentChatList={this.props.users} />
       </React.Fragment>

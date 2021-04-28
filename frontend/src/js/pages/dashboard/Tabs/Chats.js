@@ -128,15 +128,15 @@ class Chats extends Component {
       <React.Fragment>
         <div>
           <div className="px-4 pt-4">
-            <h4 className="mb-4"> Chats </h4>{" "}
+            <h4 className="mb-4"> Chats </h4>
             <div className="search-box chat-search-box">
               <InputGroup size="lg" className="mb-3 rounded-lg">
                 <span
                   className="input-group-text text-muted bg-light pe-1 ps-3"
                   id="basic-addon1"
                 >
-                  <i className="ri-search-line search-icon font-size-18"> </i>{" "}
-                </span>{" "}
+                  <i className="ri-search-line search-icon font-size-18"> </i>
+                </span>
                 <Input
                   type="text"
                   value={this.state.searchChat}
@@ -144,14 +144,14 @@ class Chats extends Component {
                   className="form-control bg-light"
                   placeholder="Search messages or users"
                 />
-              </InputGroup>{" "}
-            </div>{" "}
-            {/* Search Box */}{" "}
+              </InputGroup>
+            </div>
+            {/* Search Box */}
           </div>
           {/* online users */} <OnlineUsers />
-          {/* Start chat-message-list  */}{" "}
+          {/* Start chat-message-list  */}
           <div className="px-2">
-            <h5 className="mb-3 px-3 font-size-16"> Recent </h5>{" "}
+            <h5 className="mb-3 px-3 font-size-16"> Recent </h5>
             <SimpleBar
               style={{
                 maxHeight: "100%",
@@ -162,7 +162,6 @@ class Chats extends Component {
                 className="list-unstyled chat-list chat-user-list"
                 id="chat-list"
               >
-                {" "}
                 {this.state.recentChatList.map((chat, key) => (
                   <li
                     key={key}
@@ -179,7 +178,6 @@ class Chats extends Component {
                   >
                     <Link to="#" onClick={(e) => this.openUserChat(e, chat)}>
                       <div className="d-flex">
-                        {" "}
                         {chat.profilePicture === "Null" ? (
                           <div
                             className={
@@ -190,13 +188,12 @@ class Chats extends Component {
                           >
                             <div className="avatar-xs">
                               <span className="avatar-title rounded-circle bg-soft-primary text-primary">
-                                {" "}
-                                {chat.name.charAt(0)}{" "}
-                              </span>{" "}
-                            </div>{" "}
+                                {chat.name.charAt(0)}
+                              </span>
+                            </div>
                             {chat.status && (
                               <span className="user-status"> </span>
-                            )}{" "}
+                            )}
                           </div>
                         ) : (
                           <div
@@ -210,85 +207,76 @@ class Chats extends Component {
                               src={chat.profilePicture}
                               className="rounded-circle avatar-xs"
                               alt="Chatty"
-                            />{" "}
+                            />
                             {chat.status && (
                               <span className="user-status"> </span>
-                            )}{" "}
+                            )}
                           </div>
                         )}
                         <div className="flex-1 overflow-hidden">
                           <h5 className="text-truncate font-size-15 mb-1">
-                            {" "}
-                            {chat.name}{" "}
-                          </h5>{" "}
+                            {chat.name}
+                          </h5>
                           <p className="chat-user-message text-truncate mb-0">
-                            {" "}
                             {chat.isTyping ? (
                               <>
-                                typing{" "}
+                                typing
                                 <span className="animate-typing">
-                                  <span className="dot ms-1"> </span>{" "}
-                                  <span className="dot ms-1"> </span>{" "}
-                                  <span className="dot ms-1"> </span>{" "}
-                                </span>{" "}
+                                  <span className="dot ms-1"> </span>
+                                  <span className="dot ms-1"> </span>
+                                  <span className="dot ms-1"> </span>
+                                </span>
                               </>
                             ) : (
                               <>
-                                {" "}
                                 {chat.messages &&
                                 chat.messages.length > 0 &&
                                 chat.messages[chat.messages.length - 1]
                                   .isImageMessage === true ? (
-                                  <i className="ri-image-fill align-middle me-1">
-                                    {" "}
-                                  </i>
-                                ) : null}{" "}
+                                  <i className="ri-image-fill align-middle me-1"></i>
+                                ) : null}
                                 {chat.messages &&
                                 chat.messages.length > 0 &&
                                 chat.messages[chat.messages.length - 1]
                                   .isFileMessage === true ? (
-                                  <i className="ri-file-text-fill align-middle me-1">
-                                    {" "}
-                                  </i>
-                                ) : null}{" "}
+                                  <i className="ri-file-text-fill align-middle me-1"></i>
+                                ) : null}
                                 {chat.messages && chat.messages.length > 0
                                   ? chat.messages[chat.messages.length - 1]
                                       .message
-                                  : null}{" "}
+                                  : null}
                               </>
                             )}
-                          </p>{" "}
-                        </div>{" "}
+                          </p>
+                        </div>
                         <div className="font-size-11">
-                          {" "}
                           {chat.messages && chat.messages.length > 0
                             ? chat.messages[chat.messages.length - 1].time
-                            : null}{" "}
-                        </div>{" "}
+                            : null}
+                        </div>
                         {chat.unRead === 0 ? null : (
                           <div
                             className="unread-message"
                             id={"unRead" + chat.id}
                           >
                             <span className="badge badge-soft-danger rounded-pill">
-                              {" "}
                               {chat.messages && chat.messages.length > 0
                                 ? chat.unRead >= 20
                                   ? chat.unRead + "+"
                                   : chat.unRead
-                                : ""}{" "}
-                            </span>{" "}
+                                : ""}
+                            </span>
                           </div>
-                        )}{" "}
-                      </div>{" "}
-                    </Link>{" "}
+                        )}
+                      </div>
+                    </Link>
                   </li>
-                ))}{" "}
-              </ul>{" "}
+                ))}
+              </ul>
             </SimpleBar>
-          </div>{" "}
-          {/* End chat-message-list */}{" "}
-        </div>{" "}
+          </div>
+          {/* End chat-message-list */}
+        </div>
       </React.Fragment>
     );
   }

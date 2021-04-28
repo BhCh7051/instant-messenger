@@ -24,8 +24,7 @@ function ImageList(props) {
   return (
     <React.Fragment>
       <ul className="list-inline message-img  mb-0">
-        {" "}
-        {/* image list */}{" "}
+        {/* image list */}
         {images.map((imgMsg, key) => (
           <li key={key} className="list-inline-item message-img-list">
             <div>
@@ -36,50 +35,40 @@ function ImageList(props) {
                 title="Project 1"
               >
                 <img src={imgMsg.image} alt="chat" className="rounded border" />
-              </Link>{" "}
-            </div>{" "}
+              </Link>
+            </div>
             <div className="message-img-link">
               <ul className="list-inline mb-0">
                 <li className="list-inline-item">
                   <Link to="#">
-                    <i className="ri-download-2-line"> </i>{" "}
-                  </Link>{" "}
-                </li>{" "}
+                    <i className="ri-download-2-line"> </i>
+                  </Link>
+                </li>
                 <UncontrolledDropdown tag="li" className="list-inline-item">
                   <DropdownToggle tag="a">
-                    <i className="ri-more-fill"> </i>{" "}
-                  </DropdownToggle>{" "}
+                    <i className="ri-more-fill"> </i>
+                  </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem>
-                      {" "}
-                      {"Copy"}{" "}
-                      <i className="ri-file-copy-line float-end text-muted">
-                        {" "}
-                      </i>
+                      {"Copy"}
+                      <i className="ri-file-copy-line float-end text-muted"></i>
                     </DropdownItem>
                     <DropdownItem>
-                      {" "}
-                      {"Save"}{" "}
+                      {"Save"}
                       <i className="ri-save-line float-end text-muted"> </i>
                     </DropdownItem>
                     <DropdownItem>
-                      {" "}
-                      {"Forward"}{" "}
-                      <i className="ri-chat-forward-line float-end text-muted">
-                        {" "}
-                      </i>
+                      {"Forward"}
+                      <i className="ri-chat-forward-line float-end text-muted"></i>
                     </DropdownItem>
                     <DropdownItem>
-                      {" "}
-                      {"Delete"}{" "}
-                      <i className="ri-delete-bin-line float-end text-muted">
-                        {" "}
-                      </i>
+                      {"Delete"}
+                      <i className="ri-delete-bin-line float-end text-muted"></i>
                     </DropdownItem>
-                  </DropdownMenu>{" "}
-                </UncontrolledDropdown>{" "}
-              </ul>{" "}
-            </div>{" "}
+                  </DropdownMenu>
+                </UncontrolledDropdown>
+              </ul>
+            </div>
           </li>
         ))}
         {isOpen && (
@@ -89,7 +78,7 @@ function ImageList(props) {
             imageTitle="Project 1"
           />
         )}
-      </ul>{" "}
+      </ul>
     </React.Fragment>
   );
 }

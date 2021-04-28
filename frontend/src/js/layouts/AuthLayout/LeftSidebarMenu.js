@@ -41,22 +41,21 @@ function LeftSidebarMenu(props) {
   return (
     <React.Fragment>
       <div className="side-menu flex-lg-column me-lg-1">
-        {" "}
-        {/* LOGO */}{" "}
+        {/* LOGO */}
         <div className="navbar-brand-box">
           <Link to="/" className="logo logo-dark">
             <span className="logo-sm">
               <img src={logo} alt="logo" height="30" />
-            </span>{" "}
+            </span>
           </Link>
           <Link to="/" className="logo logo-light">
             <span className="logo-sm">
               <img src={logo} alt="logo" height="30" />
-            </span>{" "}
-          </Link>{" "}
-        </div>{" "}
+            </span>
+          </Link>
+        </div>
         {/* end navbar-brand-box  */}
-        {/* Start side-menu nav */}{" "}
+        {/* Start side-menu nav */}
         <div className="flex-lg-column my-auto">
           <Nav
             pills
@@ -73,12 +72,12 @@ function LeftSidebarMenu(props) {
                   toggleTab("profile");
                 }}
               >
-                <i className="ri-user-2-line"> </i>{" "}
-              </NavLink>{" "}
-            </NavItem>{" "}
+                <i className="ri-user-2-line"> </i>
+              </NavLink>
+            </NavItem>
             <UncontrolledTooltip target="profile" placement="top">
-              Profile{" "}
-            </UncontrolledTooltip>{" "}
+              Profile
+            </UncontrolledTooltip>
             <NavItem id="Chats">
               <NavLink
                 id="pills-chat-tab"
@@ -89,12 +88,12 @@ function LeftSidebarMenu(props) {
                   toggleTab("chat");
                 }}
               >
-                <i className="ri-message-3-line"> </i>{" "}
-              </NavLink>{" "}
-            </NavItem>{" "}
+                <i className="ri-message-3-line"> </i>
+              </NavLink>
+            </NavItem>
             <UncontrolledTooltip target="Chats" placement="top">
-              Chats{" "}
-            </UncontrolledTooltip>{" "}
+              Chats
+            </UncontrolledTooltip>
             <NavItem id="Groups">
               <NavLink
                 id="pills-groups-tab"
@@ -105,12 +104,12 @@ function LeftSidebarMenu(props) {
                   toggleTab("group");
                 }}
               >
-                <i className="ri-group-line"> </i>{" "}
-              </NavLink>{" "}
-            </NavItem>{" "}
+                <i className="ri-group-line"> </i>
+              </NavLink>
+            </NavItem>
             <UncontrolledTooltip target="Groups" placement="top">
-              Groups{" "}
-            </UncontrolledTooltip>{" "}
+              Groups
+            </UncontrolledTooltip>
             <NavItem id="Contacts">
               <NavLink
                 id="pills-contacts-tab"
@@ -121,12 +120,12 @@ function LeftSidebarMenu(props) {
                   toggleTab("contacts");
                 }}
               >
-                <i className="ri-contacts-line"> </i>{" "}
-              </NavLink>{" "}
-            </NavItem>{" "}
+                <i className="ri-contacts-line"> </i>
+              </NavLink>
+            </NavItem>
             <UncontrolledTooltip target="Contacts" placement="top">
-              Contacts{" "}
-            </UncontrolledTooltip>{" "}
+              Contacts
+            </UncontrolledTooltip>
             <NavItem id="Settings">
               <NavLink
                 id="pills-setting-tab"
@@ -137,14 +136,13 @@ function LeftSidebarMenu(props) {
                   toggleTab("settings");
                 }}
               >
-                <i className="ri-settings-2-line"> </i>{" "}
-              </NavLink>{" "}
-            </NavItem>{" "}
+                <i className="ri-settings-2-line"> </i>
+              </NavLink>
+            </NavItem>
             <UncontrolledTooltip target="Settings" placement="top">
-              Settings{" "}
-            </UncontrolledTooltip>{" "}
+              Settings
+            </UncontrolledTooltip>
             <Dropdown
-              nav
               isOpen={dropdownOpenMobile}
               toggle={toggleMobile}
               className="profile-user-dropdown d-inline-block d-lg-none"
@@ -155,15 +153,14 @@ function LeftSidebarMenu(props) {
                   alt="Chatty"
                   className="profile-user rounded-circle"
                 />
-              </DropdownToggle>{" "}
+              </DropdownToggle>
               <DropdownMenu>
                 <DropdownItem
                   onClick={() => {
                     toggleTab("profile");
                   }}
                 >
-                  {" "}
-                  Profile{" "}
+                  Profile
                   <i className="ri-profile-line float-end text-muted"> </i>
                 </DropdownItem>
                 <DropdownItem
@@ -171,22 +168,18 @@ function LeftSidebarMenu(props) {
                     toggleTab("settings");
                   }}
                 >
-                  {" "}
-                  Setting{" "}
+                  Setting
                   <i className="ri-settings-3-line float-end text-muted"> </i>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem href="/logout">
-                  {" "}
-                  Log out{" "}
-                  <i className="ri-logout-circle-r-line float-end text-muted">
-                    {" "}
-                  </i>
+                  Log out
+                  <i className="ri-logout-circle-r-line float-end text-muted"></i>
                 </DropdownItem>
-              </DropdownMenu>{" "}
-            </Dropdown>{" "}
-          </Nav>{" "}
-        </div>{" "}
+              </DropdownMenu>
+            </Dropdown>
+          </Nav>
+        </div>
         {/* end side-menu nav */}
         <div className="flex-lg-column d-none d-lg-block">
           <Nav className="side-menu-nav justify-content-center">
@@ -225,7 +218,7 @@ function LeftSidebarMenu(props) {
                     toggleTab("profile");
                   }}
                 >
-                  Profile{" "}
+                  Profile
                   <i className="ri-profile-line float-end text-muted"></i>
                 </DropdownItem>
                 <DropdownItem
@@ -233,12 +226,12 @@ function LeftSidebarMenu(props) {
                     toggleTab("settings");
                   }}
                 >
-                  Setting{" "}
+                  Setting
                   <i className="ri-settings-3-line float-end text-muted"></i>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem href="/logout">
-                  Log out{" "}
+                  Log out
                   <i className="ri-logout-circle-r-line float-end text-muted"></i>
                 </DropdownItem>
               </DropdownMenu>
@@ -246,7 +239,7 @@ function LeftSidebarMenu(props) {
           </Nav>
         </div>
         {/* Side menu user */}
-      </div>{" "}
+      </div>
     </React.Fragment>
   );
 }

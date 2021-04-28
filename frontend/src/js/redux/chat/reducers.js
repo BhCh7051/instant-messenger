@@ -40,7 +40,7 @@ const INIT_STATE = {
         },
         {
           id: 2,
-          message: "hi patrick",
+          message: "hi Prateek",
           time: "10.00",
           userType: "sender",
           isImageMessage: false,

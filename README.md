@@ -1,10 +1,8 @@
 # Instant Messenger
 
-<p align="center"><img src="ENTER ICON HERE" alt="gc-logo-nobg" border="0" width="500px"></p>
-
+<p align="center"><img src="https://raw.githubusercontent.com/rohitkv77-g/instant-messenger/main/frontend/src/js/assets/images/logo-dark.png" alt="gc-logo-nobg" border="0" width="500px"></p>
 <h2>Introduction</h2>
-##"ADD  INTRO"
-###Eg intro
+
 
 <h2>Table of Contents</h2>
 
@@ -21,33 +19,20 @@ Clone the project and install dependencies in both frontend and backend director
 
 ```
 git clone https://github.com/rohitkv77-g/instant-messenger.git
-npm install
-cd /client && npm install
+cd /frontend && npm install
+cd ../
+cd /backend $$ npm install
 ```
+
+
 
 <h3>Step 2</h3>
-Create a mongoDB database, a Cloudinary account and insert environement variables.
+Start a dev server .
 
 ```
-# backend/.env
-
-DB_URL=<URL HERE>
-JWT_SECRET=<Any string you want>
-
-# frontend/.env
-
-REACT_APP_SERVER_URL=http://localhost:5000/api
-REACT_APP_SOCKET_URL=http://localhost:5000
-REACT_APP_CLOUDINARY_API=<Your cloudinary api>
-REACT_APP_CLOUDINARY_SECRET=<Your cloudinary secret>
-```
-
-<h3>Step 3</h3>
-Start a dev server.
-
-```
-npm start
-cd /client && npm start
+cd /frontend && npm start
+cd ../
+cd /backend && npm start
 ```
 
 <h2 id="codebase">Codebase Overview</h2>
@@ -67,11 +52,7 @@ cd /client && npm start
 
 <h3>Backend</h3>
 <ul>
-<li><b>utils</b>: Helper functions, data and middlewares.</li>
-<li><b>controllers</b>: Database related actions.</li>
-<li><b>models</b>: MongoDB / Mongoose models definition.</li>
-<li><b>routes</b>: API routes.</li>
-<li><b>app.js</b>: Entry point.</li>
+<li><b>Index.js</b>: Entry point.</li>
 </ul>
 
 <h2 id="tech">Tech Stack</h2>

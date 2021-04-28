@@ -63,14 +63,14 @@ function Profile(props) {
                 tag="a"
                 className="font-size-18 text-muted dropdown-toggle"
               >
-                <i className="ri-more-2-fill"> </i>{" "}
-              </DropdownToggle>{" "}
+                <i className="ri-more-2-fill"> </i>
+              </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem> {"Edit"} </DropdownItem> <DropdownItem divider />
-              </DropdownMenu>{" "}
-            </Dropdown>{" "}
-          </div>{" "}
-          <h4 className="mb-0"> {"My Profile"} </h4>{" "}
+              </DropdownMenu>
+            </Dropdown>
+          </div>
+          <h4 className="mb-0"> {"My Profile"} </h4>
         </div>
         <div className="text-center p-4 border-bottom">
           <div className="mb-4">
@@ -80,30 +80,25 @@ function Profile(props) {
               alt="Chatty"
             />
           </div>
-          <h5 className="font-size-16 mb-1 text-truncate"> {"Priti Singh"} </h5>{" "}
+          <h5 className="font-size-16 mb-1 text-truncate"> {"Priti Singh"} </h5>
           <p className="text-muted text-truncate mb-1">
-            {" "}
-            <i className="ri-record-circle-fill font-size-10 text-success me-1 d-inline-block">
-              {" "}
-            </i>{" "}
+            <i className="ri-record-circle-fill font-size-10 text-success me-1 d-inline-block"></i>
             {"Active"}
           </p>
-        </div>{" "}
+        </div>
         {/* End profile user  */}
-        {/* Start user-profile-desc */}{" "}
+        {/* Start user-profile-desc */}
         <div className="p-4 user-profile-desc">
           <div className="text-muted">
             <p className="mb-4">
-              {" "}
               {
                 "If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual."
-              }{" "}
-            </p>{" "}
+              }
+            </p>
           </div>
           <div id="profile-user-accordion-1" className="custom-accordion">
             <Card className="shadow-none border mb-2">
-              {" "}
-              {/* import collaps */}{" "}
+              {/* import collaps */}
               <CustomCollapse
                 title="About"
                 iconClass="ri-user-2-line"
@@ -111,42 +106,41 @@ function Profile(props) {
                 toggleCollapse={toggleCollapse1}
               >
                 <div>
-                  <p className="text-muted mb-1"> {"Name"} </p>{" "}
-                  <h5 className="font-size-14"> {"Priti Singh"} </h5>{" "}
+                  <p className="text-muted mb-1"> {"Name"} </p>
+                  <h5 className="font-size-14"> {"Priti Singh"} </h5>
                 </div>
                 <div className="mt-4">
-                  <p className="text-muted mb-1"> {"Email"} </p>{" "}
-                  <h5 className="font-size-14"> {"adc@123.com"} </h5>{" "}
+                  <p className="text-muted mb-1"> {"Email"} </p>
+                  <h5 className="font-size-14"> {"adc@123.com"} </h5>
                 </div>
                 <div className="mt-4">
-                  <p className="text-muted mb-1"> {"Time"} </p>{" "}
-                  <h5 className="font-size-14"> {"11:40 AM"} </h5>{" "}
+                  <p className="text-muted mb-1"> {"Time"} </p>
+                  <h5 className="font-size-14"> {"11:40 AM"} </h5>
                 </div>
                 <div className="mt-4">
-                  <p className="text-muted mb-1"> {"Location"} </p>{" "}
-                  <h5 className="font-size-14 mb-0"> {"Mumbai, India"} </h5>{" "}
-                </div>{" "}
-              </CustomCollapse>{" "}
-            </Card>{" "}
+                  <p className="text-muted mb-1"> {"Location"} </p>
+                  <h5 className="font-size-14 mb-0"> {"Mumbai, India"} </h5>
+                </div>
+              </CustomCollapse>
+            </Card>
             {/* End About card  */}
             <Card className="mb-1 shadow-none border">
-              {" "}
-              {/* import collaps */}{" "}
+              {/* import collaps */}
               <CustomCollapse
                 title="Attached Files"
                 iconClass="ri-attachment-line"
                 isOpen={isOpen2}
                 toggleCollapse={toggleCollapse2}
               >
-                {/* attached files */} <AttachedFiles files={files} />{" "}
-              </CustomCollapse>{" "}
-            </Card>{" "}
-            {/* End Attached Files card  */}{" "}
-          </div>{" "}
+                {/* attached files */} <AttachedFiles files={files} />
+              </CustomCollapse>
+            </Card>
+            {/* End Attached Files card  */}
+          </div>
           {/* end profile-user-accordion  */}
-        </div>{" "}
-        {/* end user-profile-desc  */}{" "}
-      </div>{" "}
+        </div>
+        {/* end user-profile-desc  */}
+      </div>
     </React.Fragment>
   );
 }

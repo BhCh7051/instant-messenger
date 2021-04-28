@@ -43,7 +43,7 @@ const Login = (props) => {
   // validation
   const formik = useFormik({
     initialValues: {
-      email: "admin@themesbrand.com",
+      email: "admin@chatty",
       password: "123456",
     },
     validationSchema: Yup.object({
@@ -83,27 +83,23 @@ const Login = (props) => {
 
                 <h4> {"Sign in"} </h4>
                 <p className="text-muted mb-4">
-                  {" "}
-                  {"Sign in to continue to Chatty"}.{" "}
+                  {"Sign in to continue to Chatty"}.
                 </p>
               </div>
               <Card>
                 <CardBody className="p-4">
-                  {" "}
-                  {props.error && (
-                    <Alert color="danger"> {props.error} </Alert>
-                  )}{" "}
+                  {props.error && <Alert color="danger"> {props.error} </Alert>}
                   <div className="p-3">
                     <Form onSubmit={formik.handleSubmit}>
                       <div className="mb-3">
-                        <Label className="form-label"> {"Username"} </Label>{" "}
+                        <Label className="form-label"> {"Username"} </Label>
                         <InputGroup className="mb-3 bg-soft-light rounded-3">
                           <span
                             className="input-group-text text-muted"
                             id="basic-addon3"
                           >
-                            <i className="ri-user-2-line"> </i>{" "}
-                          </span>{" "}
+                            <i className="ri-user-2-line"> </i>
+                          </span>
                           <Input
                             type="text"
                             id="email"
@@ -118,14 +114,13 @@ const Login = (props) => {
                                 ? true
                                 : false
                             }
-                          />{" "}
+                          />
                           {formik.touched.email && formik.errors.email ? (
                             <FormFeedback type="invalid">
-                              {" "}
-                              {formik.errors.email}{" "}
+                              {formik.errors.email}
                             </FormFeedback>
-                          ) : null}{" "}
-                        </InputGroup>{" "}
+                          ) : null}
+                        </InputGroup>
                       </div>
 
                       <FormGroup className="mb-4">
@@ -134,15 +129,14 @@ const Login = (props) => {
                             to="forget-password"
                             className="text-muted font-size-13"
                           >
-                            {" "}
-                            {"Forgot password"} ?{" "}
-                          </Link>{" "}
-                        </div>{" "}
-                        <Label className="form-label"> {"Password"} </Label>{" "}
+                            {"Forgot password"} ?
+                          </Link>
+                        </div>
+                        <Label className="form-label"> {"Password"} </Label>
                         <InputGroup className="mb-3 bg-soft-light rounded-3">
                           <span className="input-group-text text-muted">
-                            <i className="ri-lock-2-line"> </i>{" "}
-                          </span>{" "}
+                            <i className="ri-lock-2-line"> </i>
+                          </span>
                           <Input
                             type="password"
                             id="password"
@@ -157,14 +151,13 @@ const Login = (props) => {
                                 ? true
                                 : false
                             }
-                          />{" "}
+                          />
                           {formik.touched.password && formik.errors.password ? (
                             <FormFeedback type="invalid">
-                              {" "}
-                              {formik.errors.password}{" "}
+                              {formik.errors.password}
                             </FormFeedback>
                           ) : null}
-                        </InputGroup>{" "}
+                        </InputGroup>
                       </FormGroup>
 
                       <div className="form-check mb-4">
@@ -177,9 +170,8 @@ const Login = (props) => {
                           className="form-check-label"
                           htmlFor="remember-check"
                         >
-                          {" "}
-                          {"Remember me"}{" "}
-                        </Label>{" "}
+                          {"Remember me"}
+                        </Label>
                       </div>
 
                       <div className="d-grid">
@@ -189,36 +181,32 @@ const Login = (props) => {
                           className=" waves-effect waves-light"
                           type="submit"
                         >
-                          {" "}
-                          {"Sign in"}{" "}
-                        </Button>{" "}
+                          {"Sign in"}
+                        </Button>
                       </div>
-                    </Form>{" "}
-                  </div>{" "}
-                </CardBody>{" "}
+                    </Form>
+                  </div>
+                </CardBody>
               </Card>
               <div className="mt-5 text-center">
                 <p>
-                  {" "}
-                  {"Don't have an account"} ?{" "}
+                  {"Don't have an account"} ?
                   <Link
                     to="register"
                     className="font-weight-medium text-primary"
                   >
-                    {" "}
-                    {"Signup now"}{" "}
-                  </Link>{" "}
+                    {"Signup now"}
+                  </Link>
                 </p>
                 <p>
-                  {" "}
-                  {"Chatty"}. {""} <i className="mdi mdi-chat text-danger"> </i>{" "}
+                  {"Chatty"}. {""} <i className="mdi mdi-chat text-danger"> </i>
                   {""}
                 </p>
-              </div>{" "}
-            </Col>{" "}
-          </Row>{" "}
-        </Container>{" "}
-      </div>{" "}
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </React.Fragment>
   );
 };

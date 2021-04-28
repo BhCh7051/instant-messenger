@@ -142,39 +142,36 @@ class Groups extends Component {
           <div className="p-4">
             <div className="user-chat-nav float-end">
               <div id="create-group">
-                {" "}
-                {/* Button trigger modal */}{" "}
+                {/* Button trigger modal */}
                 <Button
                   onClick={this.toggle}
                   type="button"
                   color="link"
                   className="text-decoration-none text-muted font-size-18 py-0"
                 >
-                  <i className="ri-group-line me-1"> </i>{" "}
-                </Button>{" "}
-              </div>{" "}
+                  <i className="ri-group-line me-1"> </i>
+                </Button>
+              </div>
               <UncontrolledTooltip target="create-group" placement="bottom">
-                Create group{" "}
+                Create group
               </UncontrolledTooltip>
-            </div>{" "}
+            </div>
             <h4 className="mb-4"> {"Groups"} </h4>
-            {/* Start add group Modal */}{" "}
+            {/* Start add group Modal */}
             <Modal isOpen={this.state.modal} centered toggle={this.toggle}>
               <ModalHeader
                 tag="h5"
                 className="modal-title font-size-14"
                 toggle={this.toggle}
               >
-                {" "}
-                {"Create New Group"}{" "}
-              </ModalHeader>{" "}
+                {"Create New Group"}
+              </ModalHeader>
               <ModalBody className="p-4">
                 <Form>
                   <div className="mb-4">
                     <Label className="form-label" htmlFor="addgroupname-input">
-                      {" "}
-                      {"Group Name"}{" "}
-                    </Label>{" "}
+                      {"Group Name"}
+                    </Label>
                     <Input
                       type="text"
                       className="form-control"
@@ -183,13 +180,12 @@ class Groups extends Component {
                       onChange={(e) => this.handleChangeGroupName(e)}
                       placeholder="Enter Group Name"
                     />
-                  </div>{" "}
+                  </div>
                   <div className="mb-4">
-                    <Label className="form-label"> {"Group Members"} </Label>{" "}
+                    <Label className="form-label"> {"Group Members"} </Label>
                     <Alert isOpen={this.state.isOpenAlert} color="danger">
-                      {" "}
-                      {this.state.message}{" "}
-                    </Alert>{" "}
+                      {this.state.message}
+                    </Alert>
                     <div className="mb-3">
                       <Button
                         color="light"
@@ -197,9 +193,8 @@ class Groups extends Component {
                         type="button"
                         onClick={this.toggleCollapse}
                       >
-                        {" "}
-                        {"Select Members"}{" "}
-                      </Button>{" "}
+                        {"Select Members"}
+                      </Button>
                     </div>
                     <Collapse
                       isOpen={this.state.isOpenCollapse}
@@ -207,32 +202,30 @@ class Groups extends Component {
                     >
                       <Card className="border">
                         <CardHeader>
-                          <h5 className="font-size-15 mb-0"> {"Contacts"} </h5>{" "}
-                        </CardHeader>{" "}
+                          <h5 className="font-size-15 mb-0"> {"Contacts"} </h5>
+                        </CardHeader>
                         <CardBody className="p-2">
                           <SimpleBar
                             style={{
                               maxHeight: "150px",
                             }}
                           >
-                            {" "}
-                            {/* contacts */}{" "}
+                            {/* contacts */}
                             <div id="addContacts">
-                              <SelectContact handleCheck={this.handleCheck} />{" "}
-                            </div>{" "}
-                          </SimpleBar>{" "}
-                        </CardBody>{" "}
-                      </Card>{" "}
-                    </Collapse>{" "}
-                  </div>{" "}
+                              <SelectContact handleCheck={this.handleCheck} />
+                            </div>
+                          </SimpleBar>
+                        </CardBody>
+                      </Card>
+                    </Collapse>
+                  </div>
                   <div>
                     <Label
                       className="form-label"
                       htmlFor="addgroupdescription-input"
                     >
-                      {" "}
-                      Description{" "}
-                    </Label>{" "}
+                      Description
+                    </Label>
                     <textarea
                       className="form-control"
                       id="addgroupdescription-input"
@@ -240,27 +233,23 @@ class Groups extends Component {
                       onChange={(e) => this.handleChangeGroupDesc(e)}
                       rows="3"
                       placeholder="Enter Description"
-                    >
-                      {" "}
-                    </textarea>{" "}
-                  </div>{" "}
-                </Form>{" "}
-              </ModalBody>{" "}
+                    ></textarea>
+                  </div>
+                </Form>
+              </ModalBody>
               <ModalFooter>
                 <Button type="button" color="link" onClick={this.toggle}>
-                  {" "}
-                  {"Close"}{" "}
-                </Button>{" "}
+                  {"Close"}
+                </Button>
                 <Button
                   type="button"
                   color="primary"
                   onClick={this.createGroup}
                 >
-                  {" "}
-                  Create Group{" "}
-                </Button>{" "}
-              </ModalFooter>{" "}
-            </Modal>{" "}
+                  Create Group
+                </Button>
+              </ModalFooter>
+            </Modal>
             {/* End add group Modal */}
             <div className="search-box chat-search-box">
               <InputGroup size="lg" className="bg-light rounded-lg">
@@ -269,18 +258,18 @@ class Groups extends Component {
                   className="text-decoration-none text-muted pr-1"
                   type="button"
                 >
-                  <i className="ri-search-line search-icon font-size-18"> </i>{" "}
-                </Button>{" "}
+                  <i className="ri-search-line search-icon font-size-18"> </i>
+                </Button>
                 <Input
                   type="text"
                   className="form-control bg-light"
                   placeholder="Search groups..."
                 />
-              </InputGroup>{" "}
-            </div>{" "}
-            {/* end search-box */}{" "}
+              </InputGroup>
+            </div>
+            {/* end search-box */}
           </div>
-          {/* Start chat-group-list */}{" "}
+          {/* Start chat-group-list */}
           <SimpleBar
             style={{
               maxHeight: "100%",
@@ -288,7 +277,6 @@ class Groups extends Component {
             className="p-4 chat-message-list chat-group-list"
           >
             <ul className="list-unstyled chat-list">
-              {" "}
               {this.state.groups.map((group, key) => (
                 <li key={key}>
                   <Link to="#">
@@ -296,25 +284,22 @@ class Groups extends Component {
                       <div className="chat-user-img me-3 ms-0">
                         <div className="avatar-xs">
                           <span className="avatar-title rounded-circle bg-soft-primary text-primary">
-                            {" "}
-                            {group.name.charAt(1)}{" "}
-                          </span>{" "}
-                        </div>{" "}
-                      </div>{" "}
+                            {group.name.charAt(1)}
+                          </span>
+                        </div>
+                      </div>
                       <div className="flex-1 overflow-hidden">
                         <h5 className="text-truncate font-size-14 mb-0">
-                          {" "}
-                          {group.name}{" "}
+                          {group.name}
                           {group.unRead !== 0 ? (
                             <Badge
                               color="none"
                               pill
                               className="badge-soft-danger float-end"
                             >
-                              {" "}
                               {group.unRead >= 20
                                 ? group.unRead + "+"
-                                : group.unRead}{" "}
+                                : group.unRead}
                             </Badge>
                           ) : null}
                           {group.isNew && (
@@ -323,20 +308,19 @@ class Groups extends Component {
                               pill
                               className="badge-soft-danger float-end"
                             >
-                              {" "}
-                              New{" "}
+                              New
                             </Badge>
                           )}
-                        </h5>{" "}
-                      </div>{" "}
-                    </div>{" "}
-                  </Link>{" "}
+                        </h5>
+                      </div>
+                    </div>
+                  </Link>
                 </li>
-              ))}{" "}
-            </ul>{" "}
-          </SimpleBar>{" "}
-          {/* End chat-group-list */}{" "}
-        </div>{" "}
+              ))}
+            </ul>
+          </SimpleBar>
+          {/* End chat-group-list */}
+        </div>
       </React.Fragment>
     );
   }

@@ -90,8 +90,8 @@ function ChatInput(props) {
                   className="form-control form-control-lg bg-light border-light"
                   placeholder="Enter Message..."
                 />
-              </div>{" "}
-            </Col>{" "}
+              </div>
+            </Col>
             <Col xs="auto">
               <div className="chat-input-links ms-md-2">
                 <ul className="list-inline mb-0 ms-0">
@@ -107,39 +107,39 @@ function ChatInput(props) {
                         color="link"
                         className="text-decoration-none font-size-16 btn-lg waves-effect"
                       >
-                        <i className="ri-emotion-happy-line"> </i>{" "}
-                      </DropdownToggle>{" "}
+                        <i className="ri-emotion-happy-line"> </i>
+                      </DropdownToggle>
                       <DropdownMenu className="dropdown-menu-end">
-                        <Picker onSelect={addEmoji} />{" "}
-                      </DropdownMenu>{" "}
-                    </ButtonDropdown>{" "}
+                        <Picker onSelect={addEmoji} />
+                      </DropdownMenu>
+                    </ButtonDropdown>
                     <UncontrolledTooltip target="emoji" placement="top">
-                      Emoji{" "}
-                    </UncontrolledTooltip>{" "}
-                  </li>{" "}
+                      Emoji
+                    </UncontrolledTooltip>
+                  </li>
                   <li className="list-inline-item input-file">
                     <Label
                       id="files"
                       className="btn btn-link text-decoration-none font-size-16 btn-lg waves-effect"
                     >
-                      <i className="ri-attachment-line"> </i>{" "}
+                      <i className="ri-attachment-line"> </i>
                       <Input
                         onChange={(e) => handleFileChange(e)}
                         type="file"
                         name="fileInput"
                         size="60"
                       />
-                    </Label>{" "}
+                    </Label>
                     <UncontrolledTooltip target="files" placement="top">
-                      Attached File{" "}
-                    </UncontrolledTooltip>{" "}
-                  </li>{" "}
+                      Attached File
+                    </UncontrolledTooltip>
+                  </li>
                   <li className="list-inline-item input-file">
                     <Label
                       id="images"
                       className="me-1 btn btn-link text-decoration-none font-size-16 btn-lg waves-effect"
                     >
-                      <i className="ri-image-fill"> </i>{" "}
+                      <i className="ri-image-fill"> </i>
                       <Input
                         onChange={(e) => handleImageChange(e)}
                         accept="image/*"
@@ -147,26 +147,26 @@ function ChatInput(props) {
                         name="fileInput"
                         size="60"
                       />
-                    </Label>{" "}
+                    </Label>
                     <UncontrolledTooltip target="images" placement="top">
-                      Images{" "}
-                    </UncontrolledTooltip>{" "}
-                  </li>{" "}
+                      Images
+                    </UncontrolledTooltip>
+                  </li>
                   <li className="list-inline-item">
                     <Button
                       type="submit"
                       color="primary"
                       className="font-size-16 btn-lg chat-send waves-effect waves-light"
                     >
-                      <i className="ri-send-plane-2-fill"> </i>{" "}
-                    </Button>{" "}
-                  </li>{" "}
-                </ul>{" "}
-              </div>{" "}
-            </Col>{" "}
-          </Row>{" "}
-        </Form>{" "}
-      </div>{" "}
+                      <i className="ri-send-plane-2-fill"> </i>
+                    </Button>
+                  </li>
+                </ul>
+              </div>
+            </Col>
+          </Row>
+        </Form>
+      </div>
     </React.Fragment>
   );
 }
