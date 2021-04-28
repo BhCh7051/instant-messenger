@@ -188,7 +188,7 @@ function UserProfileSidebar(props) {
                 </div>
                 <div className="mt-4">
                   <p className="text-muted mb-1"> {"Location"} </p>{" "}
-                  <h5 className="font-size-14 mb-0"> California, USA </h5>{" "}
+                  <h5 className="font-size-14 mb-0"> Mumbai, India </h5>{" "}
                 </div>{" "}
               </CustomCollapse>{" "}
             </Card>{" "}

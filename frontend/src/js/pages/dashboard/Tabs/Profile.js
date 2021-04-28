@@ -80,10 +80,7 @@ function Profile(props) {
               alt="Chatty"
             />
           </div>
-          <h5 className="font-size-16 mb-1 text-truncate">
-            {" "}
-            {"Patricia Smith"}{" "}
-          </h5>{" "}
+          <h5 className="font-size-16 mb-1 text-truncate"> {"Priti Singh"} </h5>{" "}
           <p className="text-muted text-truncate mb-1">
             {" "}
             <i className="ri-record-circle-fill font-size-10 text-success me-1 d-inline-block">
@@ -115,7 +112,7 @@ function Profile(props) {
               >
                 <div>
                   <p className="text-muted mb-1"> {"Name"} </p>{" "}
-                  <h5 className="font-size-14"> {"Patricia Smith"} </h5>{" "}
+                  <h5 className="font-size-14"> {"Priti Singh"} </h5>{" "}
                 </div>
                 <div className="mt-4">
                   <p className="text-muted mb-1"> {"Email"} </p>{" "}
@@ -127,7 +124,7 @@ function Profile(props) {
                 </div>
                 <div className="mt-4">
                   <p className="text-muted mb-1"> {"Location"} </p>{" "}
-                  <h5 className="font-size-14 mb-0"> {"California, USA"} </h5>{" "}
+                  <h5 className="font-size-14 mb-0"> {"Mumbai, India"} </h5>{" "}
                 </div>{" "}
               </CustomCollapse>{" "}
             </Card>{" "}
