@@ -38,7 +38,6 @@ const create = new APIClient().create;
  */
 function* login({ payload: { username, password, history } }) {
   try {
-
     // let user = null;
     // const data = {
     //     username: username,
@@ -76,8 +75,6 @@ function* login({ payload: { username, password, history } }) {
     //     password: password
     // }
 
-    
-    
     // yield put(loginUserSuccess(user));
 
     /*if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
@@ -86,15 +83,14 @@ function* login({ payload: { username, password, history } }) {
 
         } 
     else {*/
-      const response = yield call(create, "/login", {
-        username,
-        password,
-      });
-      console.log(response);
-      localStorage.setItem("authUser", JSON.stringify(response));
-      yield put(loginUserSuccess(response));
+    const response = yield call(create, "/login", {
+      username,
+      password,
+    });
+    console.log(response);
+    localStorage.setItem("authUser", JSON.stringify(response));
+    yield put(loginUserSuccess(response));
     // }
-    
   } catch (error) {
     yield put(apiError(error));
   }
@@ -121,7 +117,6 @@ function* logout({ payload: { history } }) {
  */
 function* register({ payload: { user } }) {
   try {
-
     // const data = user;
     // console.log(user);
 

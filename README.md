@@ -3,7 +3,6 @@
 <p align="center"><img src="https://raw.githubusercontent.com/rohitkv77-g/instant-messenger/main/frontend/src/js/assets/images/logo-dark.png" alt="gc-logo-nobg" border="0" width="500px"></p>
 <h2>Introduction</h2>
 
-
 <h2>Table of Contents</h2>
 
 <ul>
@@ -21,10 +20,8 @@ Clone the project and install dependencies in both frontend and backend director
 git clone https://github.com/rohitkv77-g/instant-messenger.git
 cd /frontend && npm install
 cd ../
-cd /backend $$ npm install
+cd /backend && npm install
 ```
-
-
 
 <h3>Step 2</h3>
 Start a dev server .
