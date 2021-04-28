@@ -78,10 +78,7 @@ function Settings(props) {
               <i className="ri-pencil-fill"> </i>{" "}
             </Button>
           </div>
-          <h5 className="font-size-16 mb-1 text-truncate">
-            {" "}
-            {"Patricia Smith"}{" "}
-          </h5>{" "}
+          <h5 className="font-size-16 mb-1 text-truncate"> {"Priti Singh"} </h5>{" "}
           <Dropdown
             isOpen={dropdownOpen}
             toggle={toggle}
@@ -121,7 +118,7 @@ function Settings(props) {
 
                 <div>
                   <p className="text-muted mb-1"> {"Name"} </p>{" "}
-                  <h5 className="font-size-14"> {"Patricia Smith"} </h5>
+                  <h5 className="font-size-14"> {"Priti Singh"} </h5>
                 </div>
 
                 <div className="mt-4">
@@ -136,7 +133,7 @@ function Settings(props) {
 
                 <div className="mt-4">
                   <p className="text-muted mb-1"> {"Location"} </p>{" "}
-                  <h5 className="font-size-14 mb-0"> {"California, USA"} </h5>
+                  <h5 className="font-size-14 mb-0"> {"Mumbai, India"} </h5>
                 </div>
               </CustomCollapse>{" "}
             </Card>{" "}

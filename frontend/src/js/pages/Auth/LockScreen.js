@@ -72,10 +72,7 @@ function LockScreen(props) {
                         className="rounded-circle img-thumbnail avatar-lg"
                         alt="thumbnail"
                       />
-                      <h5 className="font-size-15 mt-3">
-                        {" "}
-                        {"Patricia Smith"}{" "}
-                      </h5>{" "}
+                      <h5 className="font-size-15 mt-3"> {"Priti Singh"} </h5>{" "}
                     </div>{" "}
                     <Form onSubmit={formik.handleSubmit}>
                       <FormGroup className="mb-4">

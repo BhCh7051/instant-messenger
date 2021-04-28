@@ -277,7 +277,7 @@ function UserChat(props) {
                             <div className="conversation-name">
                               {" "}
                               {chat.userType === "sender"
-                                ? "Patricia Smith"
+                                ? "Priti Singh"
                                 : chat.userName}{" "}
                             </div>
                           }{" "}
@@ -442,7 +442,7 @@ function UserChat(props) {
                               <div className="conversation-name">
                                 {" "}
                                 {chat.userType === "sender"
-                                  ? "Patricia Smith"
+                                  ? "Priti Singh"
                                   : props.recentChatList[props.active_user]
                                       .name}{" "}
                               </div>

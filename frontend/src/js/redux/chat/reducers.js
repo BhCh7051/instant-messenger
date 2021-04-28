@@ -23,7 +23,7 @@ const INIT_STATE = {
     //admin is sender and user in receiver
     {
       id: 0,
-      name: "Pratik",
+      name: "Prateek",
       profilePicture: avatar2,
       status: "online",
       unRead: 0,
