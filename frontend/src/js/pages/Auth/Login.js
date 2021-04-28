@@ -70,13 +70,13 @@ const Login = (props) => {
                   <img
                     src={logodark}
                     alt=""
-                    height="30"
+                    height="50"
                     className="logo logo-dark"
                   />
                   <img
                     src={logolight}
                     alt=""
-                    height="30"
+                    height="50"
                     className="logo logo-light"
                   />
                 </Link>

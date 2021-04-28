@@ -1,0 +1,6 @@
+This logo was generated using the following font:
+
+- Font Title: Comfortaa
+- Font Author: Copyright 2011 The Comfortaa Project Authors (https://github.com/alexeiva/comfortaa), with Reserved Font Name "Comfortaa".
+- Font Source: http://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMPrQVIT9c2c8.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)
