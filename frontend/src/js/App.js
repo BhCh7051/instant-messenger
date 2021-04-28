@@ -14,7 +14,7 @@ const SERVER = "http://127.0.0.1:5000";
 
 // TODO
 
-let socket = socketClient(SERVER);
+// let socket = socketClient(SERVER);
 fakeBackend();
 
 // const firebaseConfig = {
@@ -41,26 +41,26 @@ class App extends Component {
   componentDidMount() {
     // Call our fetch function below once the component mounts
 
-    socket.on("connection", () => {
-      console.log("connected to server");
-    });
+    // socket.on("connection", () => {
+    //   console.log("connected to server");
+    // });
 
-    socket.on("message", (msg) => {
-      console.log("Message received from server: ", msg);
-    });
+    // socket.on("message", (msg) => {
+    //   console.log("Message received from server: ", msg);
+    // });
 
-    let count = 1;
-    let interval = setInterval(() => {
-      console.log(`Sending Message ${count}`);
-      socket.emit("message", `Message ${count}`);
-      count++;
-    }, 3000);
+    // let count = 1;
+    // let interval = setInterval(() => {
+    //   console.log(`Sending Message ${count}`);
+    //   socket.emit("message", `Message ${count}`);
+    //   count++;
+    // }, 3000);
 
-    socket.on("disconnect", (msg) => {
-      clearInterval(interval);
+    // socket.on("disconnect", (msg) => {
+    //   clearInterval(interval);
 
-      console.log("Socket disconnected - ", msg);
-    });
+    //   console.log("Socket disconnected - ", msg);
+    // });
 
     this.callBackendAPI()
       .then((res) => this.setState({ data: res.express }))

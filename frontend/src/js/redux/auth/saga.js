@@ -20,6 +20,7 @@ import {
   forgetPasswordSuccess,
   apiError,
 } from "./actions";
+import { Redirect } from "react-router";
 
 //Initilize firebase
 /*const fireBaseBackend = getFirebaseBackend();*/
@@ -37,19 +38,63 @@ const create = new APIClient().create;
  */
 function* login({ payload: { username, password, history } }) {
   try {
+
+    // let user = null;
+    const data = {
+        username: username,
+        password: password
+    }
+
+    fetch('http://localhost:5000/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(res => {
+        res.json()
+        .then(json => {
+            console.log(json);
+            if(json.user){
+                const response = {
+                    username: username,
+                    password: password
+                }
+                localStorage.setItem("authUser", JSON.stringify(response));
+                // yield put(loginUserSuccess(response));
+                history.push("/dashboard");
+            }else{
+                alert("wrong username or password");
+            }
+        })
+        .catch(err => console.log(err));
+    });
+
+    // const response = {
+    //     username: username,
+    //     password: password
+    // }
+
+    
+    
+    // yield put(loginUserSuccess(user));
+
     /*if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
             const response = yield call(fireBaseBackend.loginUser, username, password);
             yield put(loginUserSuccess(response));
 
-        } else*/ {
-      const response = yield call(create, "/login", {
-        username,
-        password,
-      });
-      localStorage.setItem("authUser", JSON.stringify(response));
-      yield put(loginUserSuccess(response));
-    }
-    history.push("/dashboard");
+        } 
+    else {*/
+    //   const response = yield call(create, "/login", {
+    //     username,
+    //     password,
+    //   });
+    //   console.log(response);
+    //   localStorage.setItem("authUser", JSON.stringify(response));
+    //   yield put(loginUserSuccess(response));
+    // }
+    
   } catch (error) {
     yield put(apiError(error));
   }
@@ -76,15 +121,45 @@ function* logout({ payload: { history } }) {
  */
 function* register({ payload: { user } }) {
   try {
-    const email = user.email;
-    const password = user.password;
-    /* if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
-            const response = yield call(fireBaseBackend.registerUser, email, password);
-            yield put(registerUserSuccess(response));
-        } else*/ {
-      const response = yield call(create, "/register", user);
-      yield put(registerUserSuccess(response));
-    }
+
+    const data = user;
+    console.log(user);
+
+    fetch('http://localhost:5000/register', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(res => {
+        res.json()
+        .then(json => {
+            console.log(json);
+            if(json.user){
+                const response = {
+                    username: user.username,
+                    password: user.password
+                }
+                localStorage.setItem("authUser", JSON.stringify(response));
+                // yield put(loginUserSuccess(response));
+                // history.push("/dashboard");
+            }else{
+                alert("username already exist");
+            }
+        })
+        .catch(err => console.log(err));
+    });
+
+    // const email = user.email;
+    // const password = user.password;
+    // /* if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
+    //         const response = yield call(fireBaseBackend.registerUser, email, password);
+    //         yield put(registerUserSuccess(response));
+    //     } else*/ {
+    //   const response = yield call(create, "/register", user);
+    //   yield put(registerUserSuccess(response));
+    // }
   } catch (error) {
     yield put(apiError(error));
   }
