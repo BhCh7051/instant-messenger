@@ -21,7 +21,7 @@ Clone the project and install dependencies in both frontend and backend director
 git clone https://github.com/rohitkv77-g/instant-messenger.git
 cd /frontend && npm install
 cd ../
-cd /backend $$ npm install
+cd /backend && npm install
 ```
 
 
