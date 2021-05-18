@@ -1,11 +1,11 @@
 import { all, call, fork, put, takeEvery } from "redux-saga/effects";
 
 import { APIClient } from "../../helpers/apiClient";
-/*
+
 import {
     getFirebaseBackend
 } from "../../helpers/firebase";
-*/
+
 
 import {
   LOGIN_USER,
@@ -23,7 +23,7 @@ import {
 import { Redirect } from "react-router";
 
 //Initilize firebase
-/*const fireBaseBackend = getFirebaseBackend();*/
+const fireBaseBackend = getFirebaseBackend();
 
 /**
  * Sets the session
@@ -38,51 +38,51 @@ const create = new APIClient().create;
  */
 function* login({ payload: { username, password, history } }) {
   try {
-    // let user = null;
-    // const data = {
-    //     username: username,
-    //     password: password
-    // }
+     let user = null;
+     const data = {
+         username: username,
+         password: password
+     }
 
-    // fetch('http://localhost:5000/login', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(data),
-    // })
-    // .then(res => {
-    //     res.json()
-    //     .then(json => {
-    //         console.log(json);
-    //         if(json.user){
-    //             const response = {
-    //                 username: username,
-    //                 password: password
-    //             }
-    //             localStorage.setItem("authUser", JSON.stringify(response));
-    //             // yield put(loginUserSuccess(response));
-    //             history.push("/dashboard");
-    //         }else{
-    //             alert("wrong username or password");
-    //         }
-    //     })
-    //     .catch(err => console.log(err));
-    // });
+     fetch('http://localhost:5000/login', {
+         method: 'POST',
+         headers: {
+             'Content-Type': 'application/json',
+         },
+         body: JSON.stringify(data),
+     })
+     .then(res => {
+         res.json()
+         .then(json => {
+             console.log(json);
+             if(json.user){
+                 const response = {
+                     username: username,
+                     password: password
+                 }
+                 localStorage.setItem("authUser", JSON.stringify(response));
+                 // yield put(loginUserSuccess(response));
+                 history.push("/dashboard");
+             }else{
+                 alert("wrong username or password");
+             }
+         })
+         .catch(err => console.log(err));
+     });
 
-    // const response = {
-    //     username: username,
-    //     password: password
-    // }
+     const response = {
+         username: username,
+         password: password
+     }
 
-    // yield put(loginUserSuccess(user));
+     yield put(loginUserSuccess(user));
 
-    /*if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
+    if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
             const response = yield call(fireBaseBackend.loginUser, username, password);
             yield put(loginUserSuccess(response));
 
-        } 
-    else {*/
+        }
+    else {
     const response = yield call(create, "/login", {
       username,
       password,
@@ -90,7 +90,7 @@ function* login({ payload: { username, password, history } }) {
     console.log(response);
     localStorage.setItem("authUser", JSON.stringify(response));
     yield put(loginUserSuccess(response));
-    // }
+     }
   } catch (error) {
     yield put(apiError(error));
   }
@@ -103,9 +103,9 @@ function* login({ payload: { username, password, history } }) {
 function* logout({ payload: { history } }) {
   try {
     localStorage.removeItem("authUser");
-    /*if (process.env.REACT_APP_DEFAULTAUTH === 'firebase') {
+    if (process.env.REACT_APP_DEFAULTAUTH === 'firebase') {
             yield call(fireBaseBackend.logout);
-        }*/
+        }
     yield call(() => {
       history.push("/login");
     });
@@ -117,41 +117,41 @@ function* logout({ payload: { history } }) {
  */
 function* register({ payload: { user } }) {
   try {
-    // const data = user;
-    // console.log(user);
+     const data = user;
+     console.log(user);
 
-    // fetch('http://localhost:5000/register', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(data),
-    // })
-    // .then(res => {
-    //     res.json()
-    //     .then(json => {
-    //         console.log(json);
-    //         if(json.user){
-    //             const response = {
-    //                 username: user.username,
-    //                 password: user.password
-    //             }
-    //             localStorage.setItem("authUser", JSON.stringify(response));
-    //             // yield put(loginUserSuccess(response));
-    //             // history.push("/dashboard");
-    //         }else{
-    //             alert("username already exist");
-    //         }
-    //     })
-    //     .catch(err => console.log(err));
-    // });
+     fetch('http://localhost:5000/register', {
+         method: 'POST',
+         headers: {
+             'Content-Type': 'application/json',
+         },
+         body: JSON.stringify(data),
+     })
+     .then(res => {
+         res.json()
+         .then(json => {
+             console.log(json);
+             if(json.user){
+                 const response = {
+                     username: user.username,
+                     password: user.password
+                 }
+                 localStorage.setItem("authUser", JSON.stringify(response));
+                 // yield put(loginUserSuccess(response));
+                 // history.push("/dashboard");
+             }else{
+                 alert("username already exist");
+             }
+         })
+         .catch(err => console.log(err));
+     });
 
     const email = user.email;
     const password = user.password;
-    /* if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
+     if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
             const response = yield call(fireBaseBackend.registerUser, email, password);
             yield put(registerUserSuccess(response));
-        } else*/ {
+        } else {
       const response = yield call(create, "/register", user);
       yield put(registerUserSuccess(response));
     }
@@ -165,7 +165,7 @@ function* register({ payload: { user } }) {
  */
 function* forgetPassword({ payload: { email } }) {
   try {
-    /*if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
+    if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
             const response = yield call(fireBaseBackend.forgetPassword, email);
             if (response) {
                 yield put(
@@ -174,7 +174,7 @@ function* forgetPassword({ payload: { email } }) {
                     )
                 );
             }
-        } else*/ {
+        } else {
       const response = yield call(create, "/forget-pwd", {
         email,
       });

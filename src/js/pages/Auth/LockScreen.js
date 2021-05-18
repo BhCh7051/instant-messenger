@@ -18,8 +18,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 //Import Images
-import logodark from "../../assets/images/logo-dark.png";
-import logolight from "../../assets/images/logo-light.png";
+import logo from "../../assets/images/logo-dark.png";
+import logo from "../../assets/images/logo-light.png";
 import avatar1 from "../../assets/images/users/avatar-1.jpg";
 
 function LockScreen(props) {
@@ -45,13 +45,13 @@ function LockScreen(props) {
               <div className="text-center mb-4">
                 <Link to="/" className="auth-logo mb-5 d-block">
                   <img
-                    src={logodark}
+                    src={logo}
                     alt=""
                     height="30"
                     className="logo logo-dark"
                   />
                   <img
-                    src={logolight}
+                    src={logo}
                     alt=""
                     height="30"
                     className="logo logo-light"

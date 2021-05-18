@@ -24,8 +24,8 @@ import {
 import { registerUser, apiError } from "../../redux/auth/actions";
 
 //Import Images
-import logodark from "../../assets/images/logo-dark.png";
-import logolight from "../../assets/images/logo-light.png";
+import logo from "../../assets/images/logo-dark.png";
+import logo from "../../assets/images/logo-light.png";
 
 /**
  * Register component
@@ -64,13 +64,13 @@ const Register = (props) => {
               <div className="text-center mb-4">
                 <Link to="/" className="auth-logo mb-5 d-block">
                   <img
-                    src={logodark}
+                    src={logo}
                     alt=""
                     height="30"
                     className="logo logo-dark"
                   />
                   <img
-                    src={logolight}
+                    src={logo}
                     alt=""
                     height="30"
                     className="logo logo-light"

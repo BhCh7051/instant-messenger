@@ -20,8 +20,8 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 //Import Images
-import logodark from "../../assets/images/logo-dark.png";
-import logolight from "../../assets/images/logo-light.png";
+import logo from "../../assets/images/logo-dark.png";
+
 
 //redux store
 import { loginUser, apiError } from "../../redux/auth/actions";
@@ -68,13 +68,13 @@ const Login = (props) => {
               <div className="text-center mb-4">
                 <Link to="/" className="auth-logo mb-5 d-block">
                   <img
-                    src={logodark}
+                    src={logo}
                     alt=""
                     height="50"
                     className="logo logo-dark"
                   />
                   <img
-                    src={logolight}
+                    src={logo}
                     alt=""
                     height="50"
                     className="logo logo-light"
