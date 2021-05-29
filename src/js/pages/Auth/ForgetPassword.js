@@ -26,7 +26,6 @@ import { forgetPassword, apiError } from "../../redux/auth/actions";
 
 //Import Images
 import logo from "../../assets/images/logo-dark.png";
-import logo from "../../assets/images/logo-light.png";
 
 /**
  * Forget Password component
@@ -117,9 +116,7 @@ const ForgetPassword = (props) => {
                             onBlur={formik.handleBlur}
                             value={formik.values.email}
                             invalid={
-                              formik.touched.email && formik.errors.email
-                                ? true
-                                : false
+                              !!(formik.touched.email && formik.errors.email)
                             }
                           />
                           {formik.touched.email && formik.errors.email ? (

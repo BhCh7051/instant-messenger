@@ -19,7 +19,6 @@ import * as Yup from "yup";
 
 //Import Images
 import logo from "../../assets/images/logo-dark.png";
-import logo from "../../assets/images/logo-light.png";
 import avatar1 from "../../assets/images/users/avatar-1.jpg";
 
 function LockScreen(props) {

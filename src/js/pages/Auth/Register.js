@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { withRouter, Link } from "react-router-dom";
 
@@ -25,18 +25,17 @@ import { registerUser, apiError } from "../../redux/auth/actions";
 
 //Import Images
 import logo from "../../assets/images/logo-dark.png";
-import logo from "../../assets/images/logo-light.png";
 
 /**
  * Register component
  * @param {*} props
  */
 const Register = (props) => {
-  const clearError = () => {
+  /*  const clearError = () => {
     props.apiError("");
-  };
+  };*/
 
-  useEffect(clearError);
+  /* useEffect(clearError);*/
 
   // validation
   const formik = useFormik({
@@ -109,9 +108,7 @@ const Register = (props) => {
                             onBlur={formik.handleBlur}
                             value={formik.values.email}
                             invalid={
-                              formik.touched.email && formik.errors.email
-                                ? true
-                                : false
+                              !!(formik.touched.email && formik.errors.email)
                             }
                           />
                           {formik.touched.email && formik.errors.email ? (
@@ -138,9 +135,10 @@ const Register = (props) => {
                             onBlur={formik.handleBlur}
                             value={formik.values.username}
                             invalid={
-                              formik.touched.username && formik.errors.username
-                                ? true
-                                : false
+                              !!(
+                                formik.touched.username &&
+                                formik.errors.username
+                              )
                             }
                           />
                           {formik.touched.username && formik.errors.username ? (
@@ -167,9 +165,10 @@ const Register = (props) => {
                             onBlur={formik.handleBlur}
                             value={formik.values.password}
                             invalid={
-                              formik.touched.password && formik.errors.password
-                                ? true
-                                : false
+                              !!(
+                                formik.touched.password &&
+                                formik.errors.password
+                              )
                             }
                           />
                           {formik.touched.password && formik.errors.password ? (

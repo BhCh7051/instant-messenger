@@ -1,34 +1,34 @@
-import React, { useState } from "react";
+import React  from "react";
 import {
-  Dropdown,
+  /*  Dropdown,
   DropdownMenu,
   DropdownItem,
-  DropdownToggle,
+  DropdownToggle,*/
   Button,
-  Input,
+  /*  Input,*/
   Row,
   Col,
-  Modal,
-  ModalBody,
+  /*  Modal,
+  ModalBody,*/
 } from "reactstrap";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { openUserSidebar } from "../../../redux/layout/actions";
 import { setFullUser } from "../../../redux/chat/actions";
-//import images
-import user from "../../../assets/images/users/avatar-4.jpg";
+/*//import images
+import user from "../../../assets/images/users/avatar-4.jpg";*/
 
 function UserHead(props) {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+/*  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownOpen1, setDropdownOpen1] = useState(false);
   const [Callmodal, setCallModal] = useState(false);
-  const [Videomodal, setVideoModal] = useState(false);
+  const [Videomodal, setVideoModal] = useState(false);*/
 
-  const toggle = () => setDropdownOpen(!dropdownOpen);
+  /*  const toggle = () => setDropdownOpen(!dropdownOpen);
   const toggle1 = () => setDropdownOpen1(!dropdownOpen1);
   const toggleCallModal = () => setCallModal(!Callmodal);
-  const toggleVideoModal = () => setVideoModal(!Videomodal);
+  const toggleVideoModal = () => setVideoModal(!Videomodal);*/
 
   const openUserSidebar = (e) => {
     e.preventDefault();
@@ -187,27 +187,27 @@ function UserHead(props) {
                       className="d-block d-lg-none user-profile-show"
                       onClick={(e) => openUserSidebar(e)}
                     >
-                      
+
                       View profile
                       <i className="ri-user-2-line float-end text-muted"> </i>
                     </DropdownItem>
                     <DropdownItem>
-                      
+
                       Archive
                       <i className="ri-archive-line float-end text-muted"> </i>
                     </DropdownItem>
                     <DropdownItem>
-                      
+
                       Muted
                       <i className="ri-volume-mute-line float-end text-muted">
-                        
+
                       </i>
                     </DropdownItem>
                     <DropdownItem onClick={(e) => deleteMessage(e)}>
-                      
+
                       Delete
                       <i className="ri-delete-bin-line float-end text-muted">
-                        
+
                       </i>
                     </DropdownItem>
                   </DropdownMenu>
@@ -217,7 +217,7 @@ function UserHead(props) {
           </Col>
         </Row>
       </div>
-      {/* Start Audiocall Modal 
+      {/* Start Audiocall Modal
       <Modal tabIndex="-1" isOpen={Callmodal} toggle={toggleCallModal} centered>
         <ModalBody>
           <div className="text-center p-4">
@@ -254,7 +254,7 @@ function UserHead(props) {
           </div>
         </ModalBody>
       </Modal>*/}
-      {/*       Start VideoCall Modal 
+      {/*       Start VideoCall Modal
       <Modal
         tabIndex="-1"
         isOpen={Videomodal}

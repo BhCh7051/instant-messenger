@@ -20,11 +20,13 @@ const Auth = (state = INIT_STATE, action) => {
   switch (action.type) {
     case LOGIN_USER:
       return { ...state, loading: true };
+
     case LOGIN_USER_SUCCESS:
       return { ...state, user: action.payload, loading: false, error: null };
 
     case REGISTER_USER:
       return { ...state, loading: true };
+
     case REGISTER_USER_SUCCESS:
       return { ...state, user: action.payload, loading: false, error: null };
 
@@ -33,6 +35,7 @@ const Auth = (state = INIT_STATE, action) => {
 
     case FORGET_PASSWORD:
       return { ...state, loading: true };
+
     case FORGET_PASSWORD_SUCCESS:
       return {
         ...state,

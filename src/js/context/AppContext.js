@@ -15,7 +15,6 @@ const AppProvider = (props) => {
   useEffect(() => {
     localStorage.setItem("react-starter-theme", appData.theme);
   }, [appData.theme]);
-
   return (
     <AppContext.Provider value={appData}>{props.children}</AppContext.Provider>
   );

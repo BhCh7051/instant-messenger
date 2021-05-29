@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   Container,
   Row,
@@ -22,7 +22,6 @@ import * as Yup from "yup";
 //Import Images
 import logo from "../../assets/images/logo-dark.png";
 
-
 //redux store
 import { loginUser, apiError } from "../../redux/auth/actions";
 
@@ -34,17 +33,17 @@ import { loginUser, apiError } from "../../redux/auth/actions";
  * @param {*} props
  */
 const Login = (props) => {
-  const clearError = () => {
+  /*const clearError = () => {
     props.apiError("");
-  };
+  };*/
 
-  useEffect(clearError);
+  /* useEffect(clearError);*/
 
   // validation
   const formik = useFormik({
     initialValues: {
-      email: "admin@chatty",
-      password: "123456",
+      email: "",
+      password: "",
     },
     validationSchema: Yup.object({
       email: Yup.string().required("Please Enter Your Username"),
@@ -110,9 +109,7 @@ const Login = (props) => {
                             onBlur={formik.handleBlur}
                             value={formik.values.email}
                             invalid={
-                              formik.touched.email && formik.errors.email
-                                ? true
-                                : false
+                              !!(formik.touched.email && formik.errors.email)
                             }
                           />
                           {formik.touched.email && formik.errors.email ? (
@@ -147,9 +144,10 @@ const Login = (props) => {
                             onBlur={formik.handleBlur}
                             value={formik.values.password}
                             invalid={
-                              formik.touched.password && formik.errors.password
-                                ? true
-                                : false
+                              !!(
+                                formik.touched.password &&
+                                formik.errors.password
+                              )
                             }
                           />
                           {formik.touched.password && formik.errors.password ? (
