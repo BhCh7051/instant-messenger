@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import {
   /*  Dropdown,
   DropdownMenu,
@@ -20,7 +20,7 @@ import { setFullUser } from "../../../redux/chat/actions";
 import user from "../../../assets/images/users/avatar-4.jpg";*/
 
 function UserHead(props) {
-/*  const [dropdownOpen, setDropdownOpen] = useState(false);
+  /*  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownOpen1, setDropdownOpen1] = useState(false);
   const [Callmodal, setCallModal] = useState(false);
   const [Videomodal, setVideoModal] = useState(false);*/
