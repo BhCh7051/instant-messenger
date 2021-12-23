@@ -10,6 +10,8 @@
   <li><a href="#setup">Setup</a></li>
   <li><a href="#codebase">Codebase Overview</a></li>
   <li><a href="#tech">Tech Stack</a></li>
+  <li><a href="#DFD">Data Flow Diagram (DFD)</a></li>
+  <li><a href="#Database">Database Schema</a></li>
 </ul>
 
 <h2 id="setup">Setup</h2>
