@@ -1,7 +1,8 @@
 # Instant Messenger
 
 <p align="center"><img src="https://raw.githubusercontent.com/rohitkv77-g/instant-messenger/main/frontend/src/js/assets/images/logo-dark.png" alt="gc-logo-nobg" border="0" width="500px"></p>
-<h2>Introduction</h2>
+<h2>Demo</h2>
+
 
 <h2>Table of Contents</h2>
 <ul>
@@ -118,3 +119,15 @@ cd /backend && npm start
 <li><b>MongoDB</b>: NoSQL Database.</li>
 <li><b>SocketIO</b>: Enables real-time, bidirectional and event-based communication.</li>
 </ul>
+
+<h2 id="DFD">Data Flow Diagram (DFD)</h2>
+<h3> Context Diagram<h3>
+![](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Context%20Diagram%20for%20Chat%20App.svg "Context")
+<h3> Level 0 DFD <h3>
+![](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Level%200%20DFD.svg "Level 0 DFD")
+<h3> Level 1 DFD <h3>
+![](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Level%201%20DFD.svg "Level 1 DFD")
+<h3> Level 2 DFD <h3>
+![](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Level%202%20DFD.svg "Level 2 DFD")
+<h2 id="Database">Database Schema</h2>
+![](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/DataBase.svg "Database Schema")
