@@ -118,3 +118,6 @@ cd /backend && npm start
 <li><b>MongoDB</b>: NoSQL Database.</li>
 <li><b>SocketIO</b>: Enables real-time, bidirectional and event-based communication.</li>
 </ul>
+
+<h2 id="DFD">Data Flow Diagram</h2>
+<h3> Context Diagram<h3>
