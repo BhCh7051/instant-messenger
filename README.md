@@ -1,9 +1,17 @@
 # Instant Messenger
 
+![React](https://img.shields.io/badge/React-05122A&logo=react)
+![React](https://img.shields.io/badge/Javascript-05122A)
+![Yarn](https://img.shields.io/badge/Yarn-05122Al)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-05122A)
+![GitHub last commit](https://img.shields.io/github/last-commit/BhCh7051/instant-messenger)
+![GitHub issues](https://img.shields.io/github/issues/BhCh7051/instant-messenger)
+![GitHub repo size](https://img.shields.io/github/repo-size/BhCh7051/instant-messenger)
+
 <p align="center"><img src="https://raw.githubusercontent.com/rohitkv77-g/instant-messenger/main/frontend/src/js/assets/images/logo-dark.png" alt="gc-logo-nobg" border="0" width="500px"></p>
 <h2>Demo </h2>
 
-![Demo](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/ChattyAnimation.gif)
+
 
 <h2>Table of Contents</h2>
 <ul>
@@ -127,25 +135,30 @@ cd /backend && npm start
 <h3> Context Diagram</h3>
 <p align="center">
 
-![Context Diagram](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Context%20Diagram%20for%20Chat%20App.svg)
+<img src="./Readme/Context%20Diagram%20for%20Chat%20App.svg" />
 
 </p>
 <h3> Level 0 DFD </h3>
 
 <p align="center">
 
-![Level 0 DFD](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Level%200%20DFD.svg)
+<img src="./Readme/Level%200%20DFD.svg" />
+
 
 </p>
 
 <h3> Level 1 DFD </h3>
+<p align="center">
+<img src="./Readme/Level%201%20DFD.svg" />
 
-![Level 1 DFD](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Level%201%20DFD.svg)
 
+</p>
 <h3> Level 2 DFD </h3>
 
-![Level 2 DFD](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Level%202%20DFD.svg)
+<p align="center">
+<img src="./Readme/Level%202%20DFD.svg" />
 
+</p>
 <h2 id="Database">Database Schema</h2>
 
 ![Database Schema](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/DataBase.svg)
