@@ -3,7 +3,9 @@
 <p align="center"><img src="https://raw.githubusercontent.com/rohitkv77-g/instant-messenger/main/frontend/src/js/assets/images/logo-dark.png" alt="gc-logo-nobg" border="0" width="500px"></p>
 <h2>Demo </h2>
 
-![Demo](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/ChattyAnimation.gif)
+![Demo](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/chatty.gif)
+
+![Smartphone Preview](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/chattyMobile.gif)
 
 <h2>Table of Contents</h2>
 <ul>
