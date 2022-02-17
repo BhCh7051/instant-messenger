@@ -5,6 +5,7 @@
 
 ![Demo](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/chatty.gif)
 
+
 ![Smartphone Preview](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/chattyMobile.gif)
 
 <h2>Table of Contents</h2>
