@@ -15,13 +15,13 @@
 ### Preview
 
 <p align="center">
-<img src="./main/Readme/chatty.gif" />
+<img src="./Readme/chatty.gif" />
 </p>
 
 ### Smartphone Preview
 
 <p align="center">
-<img src="./main/Readme/chattyMobile.gif" />
+<img src="./Readme/chattyMobile.gif" />
 </p>
 
 <h2>Table of Contents</h2>
