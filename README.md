@@ -1,12 +1,28 @@
 # Instant Messenger
 
+![React](https://img.shields.io/badge/React-05122A&logo=react)
+![React](https://img.shields.io/badge/Javascript-05122A)
+![Yarn](https://img.shields.io/badge/Yarn-05122Al)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-05122A)
+![GitHub last commit](https://img.shields.io/github/last-commit/BhCh7051/instant-messenger)
+![GitHub issues](https://img.shields.io/github/issues/BhCh7051/instant-messenger)
+![GitHub repo size](https://img.shields.io/github/repo-size/BhCh7051/instant-messenger)
+
 <p align="center"><img src="https://raw.githubusercontent.com/rohitkv77-g/instant-messenger/main/frontend/src/js/assets/images/logo-dark.png" alt="gc-logo-nobg" border="0" width="500px"></p>
 <h2>Demo </h2>
 
-![Demo](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/chatty.gif)
 
+### Preview
 
-![Smartphone Preview](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/chattyMobile.gif)
+<p align="center">
+<img src="./main/Readme/chatty.gif" />
+</p>
+
+### Smartphone Preview
+
+<p align="center">
+<img src="./main/Readme/chattyMobile.gif" />
+</p>
 
 <h2>Table of Contents</h2>
 <ul>
