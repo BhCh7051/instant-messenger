@@ -146,25 +146,33 @@ cd /backend && npm start
 <h3> Context Diagram</h3>
 <p align="center">
 
-![Context Diagram](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Context%20Diagram%20for%20Chat%20App.svg)
+<img src="./Readme/Context%20Diagram%20for%20Chat%20App.svg)" />
 
 </p>
 <h3> Level 0 DFD </h3>
 
 <p align="center">
 
+<img src="./Readme/Level%200%20DFD.svg)" />
+  
 ![Level 0 DFD](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Level%200%20DFD.svg)
 
 </p>
 
 <h3> Level 1 DFD </h3>
+<p align="center">
+<img src="./Readme/Level%201%20DFD.svg)" />
+
 
 ![Level 1 DFD](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Level%201%20DFD.svg)
-
+</p>
 <h3> Level 2 DFD </h3>
 
-![Level 2 DFD](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Level%202%20DFD.svg)
+<p align="center">
+<img src="./Readme/Level%202%20DFD.svg)" />
 
+![Level 2 DFD](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/Level%202%20DFD.svg)
+</p>
 <h2 id="Database">Database Schema</h2>
 
 ![Database Schema](https://raw.githubusercontent.com/BhCh7051/instant-messenger/main/Readme/DataBase.svg)
